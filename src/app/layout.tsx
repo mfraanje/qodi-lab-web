@@ -1,8 +1,9 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
+import '@mantine/core/styles.css';
+import React from 'react';
+import { MantineProvider, ColorSchemeScript } from '@mantine/core';
+import { theme } from '../theme';
+import { Metadata } from 'next';
+import styles from './main.module.css';
 
 export const metadata: Metadata = {
   title: 'Kodikas Homepage',
@@ -16,7 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='nl'>
-      <body className={inter.className}>{children}</body>
+      <head>
+        <ColorSchemeScript />
+      </head>
+      <body className={styles.body}>
+        <MantineProvider theme={theme}>{children}</MantineProvider>
+      </body>
     </html>
   );
 }
