@@ -1,11 +1,11 @@
 'use client';
-import { HeroImageComponent } from '@/components/HeroImageComponent';
+import { HeroComponent } from '@/components/HeroComponent';
 import React from 'react';
 
 export default function Home() {
   return (
     <>
-      <HeroImageComponent />
+      <HeroComponent />
     </>
   );
 }

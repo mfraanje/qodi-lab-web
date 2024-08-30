@@ -1,6 +1,7 @@
 import { sendEmailWithTemplate } from '@/lib/email/postmark';
 
 const from = 'mail@mickeyfraanje.com';
+const homeAddress = 'info@mickeyfraanje.com';
 
 export const sendInterestEmail = async (email: string) => {
   const templateModel = {
@@ -8,7 +9,7 @@ export const sendInterestEmail = async (email: string) => {
   } as any;
   await sendEmailWithTemplate(
     from,
-    email,
+    homeAddress,
     'interest-mail',
     templateModel,
     'outbound'

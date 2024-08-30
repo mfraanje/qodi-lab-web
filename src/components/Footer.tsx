@@ -9,12 +9,15 @@ export default function Footer() {
         height: '125px',
         background: '#3F3D56',
         position: 'absolute',
+        display: 'flex',
         bottom: 0,
       }}
     >
       <Container className={classes.footer} size={'lg'}>
-        <Text c='dimmed' size='sm'>
+        <Text c='dimmed' size='xs'>
           © 2024 Kodikas Labs <br />
+          info@kodikaslabs.com
+          <br />
           KVK-nummer: 93578776 <br />
           Btw-identificatienummer: NL005029056B30
         </Text>
