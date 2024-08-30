@@ -4,13 +4,10 @@ import {
   Title,
   Button,
   Text,
-  List,
-  ThemeIcon,
   rem,
   TextInput,
   Grid,
 } from '@mantine/core';
-import { IconCheck } from '@tabler/icons-react';
 import classes from './Components.module.css';
 import { IconAt } from '@tabler/icons-react';
 import { useForm } from '@mantine/form';
@@ -33,7 +30,7 @@ export function HeroImageComponent() {
   };
 
   return (
-    <Container size='lg' pos={'relative'} mb={100}>
+    <Container size='lg' pos={'relative'} mb={100} mt={50}>
       <div className={classes.inner}>
         <div className={classes.content}>
           <Text c='violet.9' mt='md' fw={700} size='xs'>

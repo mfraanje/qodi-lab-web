@@ -4,6 +4,7 @@ import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
 import { Metadata } from 'next';
 import styles from './main.module.css';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Kodikas Homepage',
@@ -21,7 +22,10 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body className={styles.body}>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          {children}
+          <Footer></Footer>
+        </MantineProvider>
       </body>
     </html>
   );

@@ -48,3 +48,16 @@
 .highlight {
   color: light-dark(var(--mantine-color-yellow-6), var(--mantine-color-yellow-4));
 }
+
+.footer {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--mantine-spacing-md);
+  padding-top: var(--mantine-spacing-lg);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    flex-direction: column;
+  }
+}
