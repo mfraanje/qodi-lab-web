@@ -6,7 +6,7 @@
 }
 
 .content {
-  max-width: rem(480px);
+  max-width: rem(600px);
   margin-right: calc(var(--mantine-spacing-xl) * 3);
 
   @media (max-width: $mantine-breakpoint-md) {
@@ -46,8 +46,5 @@
 }
 
 .highlight {
-  position: relative;
-  background-color: var(--mantine-color-yellow-2);
-  border-radius: var(--mantine-radius-sm);
-  padding: rem(4px) rem(12px);
+  color: light-dark(var(--mantine-color-yellow-6), var(--mantine-color-yellow-4));
 }
