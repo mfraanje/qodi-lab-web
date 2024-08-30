@@ -37,7 +37,7 @@ export function HeroComponent() {
 
   return (
     <>
-      <Container size='lg' pos={'relative'} mb={100} mt={50}>
+      <Container size='lg' pos={'relative'} mb={100} mt={'3rem'}>
         <div className={classes.inner}>
           <div className={classes.content}>
             <Text c='violet.9' mt='md' fw={700} size='xs'>
@@ -50,9 +50,12 @@ export function HeroComponent() {
             <Text c='black' mt='md'>
               Of je nu een gebruiksvriendelijke applicatie nodig hebt of een
               volledig geïntegreerd platform, wij ontwikkelen
-              maatwerkoplossingen die jouw bedrijf efficiënter laten werken.
-              Transformeer jouw ideeën in krachtige, schaalbare tools die het
-              verschil maken.
+              maatwerkoplossingen die jouw bedrijf passen. Transformeer jouw
+              ideeën in krachtige, schaalbare tools die het verschil maken.{' '}
+              <br />
+              <br />
+              <strong style={{ color: '#FAB007' }}>Geïnteresseerd? </strong>Laat
+              je e-mail achter en we nemen contact met je op!
             </Text>
             <Transition
               mounted={emailSent}
@@ -81,37 +84,45 @@ export function HeroComponent() {
               )}
             </Transition>
             {!emailSent && (
-              <form
-                onSubmit={form.onSubmit((values) => handleSubmit(values.email))}
-              >
-                <Grid mt={60}>
-                  <Grid.Col span={10}>
-                    <TextInput
-                      leftSectionPointerEvents='none'
-                      leftSection={icon}
-                      placeholder='Email'
-                      size='md'
-                      type='email'
-                      name='email'
-                      id='email'
-                      required
-                      autoComplete='email'
-                      key={form.key('email')}
-                      {...form.getInputProps('email')}
-                    />
-                  </Grid.Col>
-                  <Grid.Col span={2}>
-                    <Button
-                      radius='sm'
-                      size='md'
-                      className={classes.control}
-                      type='submit'
-                    >
-                      Verstuur
-                    </Button>
-                  </Grid.Col>
-                </Grid>
-              </form>
+              <>
+                {/* <Text size='xs' c={'dimmed'} mt={50}>
+                  Geïnteresseerd? Laat je e-mail achter en we nemen contact met
+                  je op!
+                </Text> */}
+                <form
+                  onSubmit={form.onSubmit((values) =>
+                    handleSubmit(values.email)
+                  )}
+                >
+                  <Grid mt={'3rem'}>
+                    <Grid.Col span={10}>
+                      <TextInput
+                        leftSectionPointerEvents='none'
+                        leftSection={icon}
+                        placeholder='Email'
+                        size='md'
+                        type='email'
+                        name='email'
+                        id='email'
+                        required
+                        autoComplete='email'
+                        key={form.key('email')}
+                        {...form.getInputProps('email')}
+                      />
+                    </Grid.Col>
+                    <Grid.Col span={2}>
+                      <Button
+                        radius='sm'
+                        size='md'
+                        className={classes.control}
+                        type='submit'
+                      >
+                        Verstuur
+                      </Button>
+                    </Grid.Col>
+                  </Grid>
+                </form>
+              </>
             )}
           </div>
         </div>
@@ -119,7 +130,7 @@ export function HeroComponent() {
           src='./image.svg'
           pos='absolute'
           right={-25}
-          top={75}
+          top={90}
           className={classes.image}
         />
       </Container>
