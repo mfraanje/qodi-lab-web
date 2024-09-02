@@ -42,7 +42,7 @@ export function HeroComponent() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Text c='violet.9' mt='md' fw={700} size='xs'>
-              Qodi lab
+              Qodi Lab - Development
             </Text>
             <Title className={classes.title}>
               Software <span className={classes.highlight}>oplossingen</span> op
@@ -86,17 +86,13 @@ export function HeroComponent() {
             </Transition>
             {!emailSent && (
               <>
-                {/* <Text size='xs' c={'dimmed'} mt={50}>
-                  Geïnteresseerd? Laat je e-mail achter en we nemen contact met
-                  je op!
-                </Text> */}
                 <form
                   onSubmit={form.onSubmit((values) =>
                     handleSubmit(values.email)
                   )}
                 >
                   <Grid mt={'3rem'}>
-                    <Grid.Col span={10}>
+                    <Grid.Col span={{ base: 12, md: 10 }}>
                       <TextInput
                         leftSectionPointerEvents='none'
                         leftSection={icon}

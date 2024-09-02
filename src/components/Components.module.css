@@ -51,12 +51,11 @@
 
 .footer {
   width: 100vw;
+  height: 125px;
+  /* position: absolute; */
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  
-
-  @media (max-width: $mantine-breakpoint-sm) {
-    flex-direction: column;
-  }
+  background: #3F3D56;
+  margin-top: 7.5px;
 }
+
