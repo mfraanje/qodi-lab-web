@@ -15,8 +15,8 @@ export default function Footer() {
     >
       <Container className={classes.footer} size={'lg'}>
         <Text c='dimmed' size='xs'>
-          © 2024 Kodikas Labs <br />
-          info@kodikaslabs.com
+          © 2024 Qodi lab <br />
+          info@qodilab.com
           {/* <br />
           KVK-nummer: 93578776 <br />
           Btw-identificatienummer: NL005029056B30 */}

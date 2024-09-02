@@ -41,7 +41,7 @@ export function HeroComponent() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Text c='violet.9' mt='md' fw={700} size='xs'>
-              Kodikas Labs
+              Qodi lab
             </Text>
             <Title className={classes.title}>
               Software <span className={classes.highlight}>oplossingen</span> op
