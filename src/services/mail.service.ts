@@ -6,6 +6,7 @@
 // export const sendInterestEmail = async (email: string) => {
 //   const templateModel = {
 //     sender_email: email,
+// origin: 'Qodilab',
 //   } as any;
 //   await sendEmailWithTemplate(
 //     from,
