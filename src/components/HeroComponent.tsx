@@ -14,7 +14,7 @@ import classes from './Components.module.css';
 import { IconAt } from '@tabler/icons-react';
 import { useForm } from '@mantine/form';
 import { useState } from 'react';
-// import { sendInterestEmail } from '@/services/mail.service';
+import { sendInterestEmail } from '@/services/mail.service';
 
 export function HeroComponent() {
   const icon = <IconAt style={{ width: rem(16), height: rem(16) }} />;
@@ -32,7 +32,7 @@ export function HeroComponent() {
 
   const handleSubmit = async (email: string) => {
     console.log(email);
-    // await sendInterestEmail(email);
+    await sendInterestEmail(email);
     setEmailSent(true);
   };
 
@@ -51,12 +51,12 @@ export function HeroComponent() {
             <Text c='black' mt='md'>
               Of je nu een gebruiksvriendelijke applicatie nodig hebt of een
               volledig geïntegreerd platform, wij ontwikkelen
-              maatwerkoplossingen die jouw bedrijf passen. Transformeer jouw
+              maatwerkoplossingen die bij jouw bedrijf passen. Transformeer jouw
               ideeën in krachtige, schaalbare tools die het verschil maken.{' '}
               <br />
               <br />
               <strong style={{ color: '#FAB007' }}>Geïnteresseerd? </strong>Laat
-              je e-mail achter en we nemen contact met je op!
+              je e-mail achter en we bespreken je idee!
             </Text>
             <Transition
               mounted={emailSent}
@@ -92,7 +92,7 @@ export function HeroComponent() {
                   )}
                 >
                   <Grid mt={'3rem'}>
-                    <Grid.Col span={{ base: 12, md: 10 }}>
+                    <Grid.Col span={{ base: 12, md: 8 }}>
                       <TextInput
                         leftSectionPointerEvents='none'
                         leftSection={icon}
@@ -114,7 +114,7 @@ export function HeroComponent() {
                         className={classes.control}
                         type='submit'
                       >
-                        Verstuur
+                        Zet de eerste stap
                       </Button>
                     </Grid.Col>
                   </Grid>

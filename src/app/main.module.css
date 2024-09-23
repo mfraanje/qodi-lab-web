@@ -1,15 +1,3 @@
 .body{
     background-color: #fbf6df;
-    min-height: 80vh;
-    position: relative;
-}
-
-.main {
-    flex: 1;
-}
-
-.footer {
-  width: 100vw;
-  position: absolute;
-  background: #3F3D56;
 }

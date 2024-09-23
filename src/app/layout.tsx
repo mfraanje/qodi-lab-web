@@ -7,7 +7,7 @@ import styles from './main.module.css';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Qodi Lab Homepage',
+  title: 'Qodi lab - Homepage',
   description: 'Software oplossingen op maat.',
 };
 
@@ -23,10 +23,8 @@ export default function RootLayout({
       </head>
       <body className={styles.body}>
         <MantineProvider theme={theme}>
-          <main className={styles.main}>{children}</main>
-          <footer className={styles.footer}>
-            <Footer></Footer>
-          </footer>
+          {children}
+          <Footer></Footer>
         </MantineProvider>
       </body>
     </html>
