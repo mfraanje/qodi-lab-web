@@ -7,7 +7,7 @@ import styles from './main.module.css';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Kodikas Homepage',
+  title: 'Qodi lab - Homepage',
   description: 'Software oplossingen op maat.',
 };
 

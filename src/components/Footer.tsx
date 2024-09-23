@@ -1,5 +1,5 @@
 import { Container, Text } from '@mantine/core';
-import classes from './Components.module.css';
+import styles from './Components.module.css';
 
 export default function Footer() {
   return (
@@ -13,7 +13,7 @@ export default function Footer() {
         bottom: 0,
       }}
     >
-      <Container className={classes.footer} size={'lg'}>
+      <Container size={'lg'} className={styles.footer}>
         <Text c='dimmed' size='xs'>
           © 2024 Qodi lab <br />
           info@qodilab.com
