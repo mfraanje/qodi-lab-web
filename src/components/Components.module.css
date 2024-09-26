@@ -82,7 +82,7 @@
 .backgroundBlob {
   position: absolute;
   top: -30vh;
-  right: -600px;
+  right: -625px;
   z-index: -1;
   height: 150vh;
   pointer-events: none;
@@ -90,7 +90,9 @@
 }
 
 .highlight {
-  color: light-dark(var(--mantine-color-yellow-6), var(--mantine-color-yellow-4));
+  /* color: light-dark(var(--mantine-color-lime-6), var(--mantine-color-lime-4)); */
+    color: #EF6F6C;
+
 }
 
 .footer {

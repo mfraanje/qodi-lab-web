@@ -9,7 +9,7 @@ import './globals.css';
 import Header from '@/components/Header';
 
 export const metadata: Metadata = {
-  title: 'Qodi lab - Software Development',
+  title: 'Qodi Lab - Software Development & Consulting',
   description: 'Software oplossingen op maat.',
 };
 

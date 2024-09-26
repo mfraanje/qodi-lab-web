@@ -48,20 +48,20 @@ export function HeroComponent() {
             </Text> */}
           <Stack>
             <Title className={classes.title}>
-              Software <span className={classes.highlight}>oplossingen</span> op
+              Software, <span className={classes.highlight}>simpel</span> en op
               maat
             </Title>
             <div className={classes.content}>
               <Text c='#3F3D56' my='xl' size='sm'>
-                Of je nu een gebruiksvriendelijke applicatie nodig hebt of een
-                volledig geïntegreerd platform, wij ontwikkelen
-                maatwerkoplossingen die bij jouw bedrijf passen. Transformeer
-                jouw ideeën in krachtige, schaalbare tools die het verschil
+                Software oplossingen hoeven niet ontoegankelijk te zijn. Of je
+                nu een gebruiksvriendelijke applicatie nodig hebt of een
+                volledig geïntegreerd platform, wij helpen je om jouw ideeën in
+                krachtige, schaalbare tools te transformeren die het verschil
                 maken. <br />
                 <br />
-                <strong style={{ color: '#FAB007' }}>Geïnteresseerd? </strong>
-                Laat je e-mail achter voor een gratis en vrijblijvend
-                adviesgesprek!
+                <strong className={classes.highlight}>Geïnteresseerd? </strong>
+                Laat je e-mail achter om volledig gratis en vrijblijvend over je
+                idee of probleem te sparren!
               </Text>
             </div>
             <Box>
