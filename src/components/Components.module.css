@@ -6,7 +6,7 @@
 }
 
 .content {
-  max-width: rem(600px);
+  max-width: rem(500px);
   margin-right: calc(var(--mantine-spacing-xl) * 3);
 
   @media (max-width: $mantine-breakpoint-md) {
@@ -23,6 +23,7 @@
   font-size: rem(48px);
   line-height: 1.2;
   font-weight: 900;
+  z-index: 1;
 
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: rem(28px);
@@ -43,13 +44,15 @@
   }
 }
 
-.headerBackground {
+.header {
    /* background-color: #fbf6df; */
    background-color: #f9f9f9;
+   position: relative;
 }
 
 .qodi{
-  color: #845ef7;
+  /* color: #845ef7; */
+  color: #51A3A3;
 }
 
 .control {
@@ -59,13 +62,31 @@
 }
 
 .image {
-  width: rem(500px);
+  width: rem(480px);
   height: rem(500px);
   object-fit: contain;
-
+  z-index: 1;
   @media (max-width: $mantine-breakpoint-md) {
     display: none;
   }
+}
+
+.heroDots {
+  color: #2F2E41;
+  z-index: -1;
+  @media (max-width: $mantine-breakpoint-md) {
+    color: #E6E6E6;
+  }
+}
+
+.backgroundBlob {
+  position: absolute;
+  top: -25vh;
+  right: -600px;
+  z-index: -1;
+  height: 150vh;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 .highlight {

@@ -3,7 +3,7 @@ import classes from './Components.module.css';
 
 export default function Header() {
   return (
-    <div className={classes.headerBackground}>
+    <div className={classes.header}>
       <Container size='lg' pos={'relative'} mb={100}>
         <Group py={'0.5rem'}>
           <Title className={classes.logoText} order={2}>
