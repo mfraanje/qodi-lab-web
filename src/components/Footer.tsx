@@ -17,9 +17,9 @@ export default function Footer() {
         <Text c='dimmed' size='xs'>
           © 2024 Qodi lab <br />
           info@qodilab.com
-          {/* <br />
+          <br />
           KVK-nummer: 93578776 <br />
-          Btw-identificatienummer: NL005029056B30 */}
+          Btw-identificatienummer: NL005029056B30
         </Text>
       </Container>
     </div>
