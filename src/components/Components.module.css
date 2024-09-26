@@ -18,11 +18,11 @@
 .title {
   color: #2F2E41;
   font-family:
-    Fredoka,
+    Greycliff CF,
     var(--mantine-font-family);
   font-size: rem(48px);
   line-height: 1.2;
-  font-weight: 500;
+  font-weight: 900;
 
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: rem(28px);
