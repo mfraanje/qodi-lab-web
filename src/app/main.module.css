@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+
 .body{
-    background-color: #fbf6df;
+    /* background-color: #fbf6df; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
 }

@@ -38,17 +38,17 @@ export function HeroComponent() {
 
   return (
     <>
-      <Container size='lg' pos={'relative'} mb={100} mt={'3rem'}>
+      <Container size='lg' pos={'relative'} mb={100}>
         <div className={classes.inner}>
           <div className={classes.content}>
-            <Text c='violet.9' mt='md' fw={700} size='xs'>
+            {/* <Text c='violet.9' mt='md' fw={700} size='xs'>
               Qodi Lab - Development
-            </Text>
+            </Text> */}
             <Title className={classes.title}>
               Software <span className={classes.highlight}>oplossingen</span> op
               maat
             </Title>
-            <Text c='black' mt='md'>
+            <Text c='#3F3D56' mt='xl' size='sm'>
               Of je nu een gebruiksvriendelijke applicatie nodig hebt of een
               volledig geïntegreerd platform, wij ontwikkelen
               maatwerkoplossingen die bij jouw bedrijf passen. Transformeer jouw
@@ -97,7 +97,7 @@ export function HeroComponent() {
                         leftSectionPointerEvents='none'
                         leftSection={icon}
                         placeholder='Email'
-                        size='md'
+                        size='sm'
                         type='email'
                         name='email'
                         id='email'
@@ -110,7 +110,7 @@ export function HeroComponent() {
                     <Grid.Col span={2}>
                       <Button
                         radius='sm'
-                        size='md'
+                        size='sm'
                         className={classes.control}
                         type='submit'
                       >
@@ -121,15 +121,15 @@ export function HeroComponent() {
                 </form>
               </>
             )}
+            <Image
+              src='./image.svg'
+              pos='absolute'
+              right={-25}
+              top={-12}
+              className={classes.image}
+            />
           </div>
         </div>
-        <Image
-          src='./image.svg'
-          pos='absolute'
-          right={-25}
-          top={90}
-          className={classes.image}
-        />
       </Container>
     </>
   );

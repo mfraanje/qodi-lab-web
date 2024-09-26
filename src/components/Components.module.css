@@ -1,7 +1,7 @@
 .inner {
   display: flex;
   justify-content: space-between;
-  padding-top: calc(var(--mantine-spacing-xl) * 4);
+  padding-top: calc(var(--mantine-spacing-xl) * 2);
   padding-bottom: calc(var(--mantine-spacing-xl) * 4);
 }
 
@@ -16,17 +16,40 @@
 }
 
 .title {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  color: #2F2E41;
   font-family:
-    Greycliff CF,
+    Fredoka,
     var(--mantine-font-family);
-  font-size: rem(44px);
+  font-size: rem(48px);
   line-height: 1.2;
-  font-weight: 900;
+  font-weight: 500;
 
   @media (max-width: $mantine-breakpoint-xs) {
     font-size: rem(28px);
   }
+}
+
+.logoText {
+  color: #2F2E41;
+  font-family:
+    Fredoka,
+    var(--mantine-font-family);
+  line-height: 1.2;
+  letter-spacing: 0px;
+  font-weight: 500;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(28px);
+  }
+}
+
+.headerBackground {
+   /* background-color: #fbf6df; */
+   background-color: #f9f9f9;
+}
+
+.qodi{
+  color: #845ef7;
 }
 
 .control {
