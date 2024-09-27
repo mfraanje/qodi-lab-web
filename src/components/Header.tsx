@@ -73,7 +73,7 @@ export default function Header() {
               </Transition>
             </Group>
           </Title>
-          <Text mt={'0.25rem'} size='sm' fw={500}>
+          <Text mt={'0.25rem'} size='sm' fw={500} visibleFrom='xs'>
             Software Development | Consulting
           </Text>
         </Group>

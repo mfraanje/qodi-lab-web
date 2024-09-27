@@ -26,7 +26,7 @@
   z-index: 1;
 
   @media (max-width: $mantine-breakpoint-xs) {
-    font-size: rem(28px);
+    font-size: rem(32px);
   }
 }
 
@@ -81,7 +81,7 @@
   color: #2F2E41;
   z-index: -1;
   @media (max-width: $mantine-breakpoint-md) {
-    color: #d0eded;
+    color: #e3f2f2;
   }
 }
 
