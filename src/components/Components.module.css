@@ -75,7 +75,7 @@
   color: #2F2E41;
   z-index: -1;
   @media (max-width: $mantine-breakpoint-md) {
-    color: #E6E6E6;
+    color: #d0eded;
   }
 }
 
@@ -83,10 +83,11 @@
   position: absolute;
   top: -30vh;
   right: -625px;
-  z-index: -1;
+  z-index: -10 !important;
   height: 150vh;
-  pointer-events: none;
-  overflow: hidden;
+  @media (max-width: $mantine-breakpoint-md) {
+    display: none;
+  }
 }
 
 .highlight {
