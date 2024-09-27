@@ -44,7 +44,7 @@ export function HeroComponent() {
 
   return (
     <>
-      <Container size='lg' pos={'relative'} mb={100}>
+      <Container size='lg' pos={'relative'} mb={100} className={classes.hero}>
         <div className={classes.inner}>
           {/* <Text c='violet.9' mt='md' fw={700} size='xs'>
               Qodi Lab - Development
@@ -59,8 +59,8 @@ export function HeroComponent() {
               {(styles) => (
                 <div style={styles}>
                   <Title className={classes.title}>
-                    Software, <span className={classes.highlight}>simpel</span>{' '}
-                    en op maat
+                    Software, <br />
+                    <span className={classes.highlight}>simpel</span> en op maat
                   </Title>
                 </div>
               )}

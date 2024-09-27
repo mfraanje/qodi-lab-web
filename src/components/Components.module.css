@@ -47,7 +47,9 @@
 .header {
    /* background-color: #fbf6df; */
    background-color: #f9f9f9;
-   position: relative;
+   position: absolute;
+   width: 100vw;
+   top: 0;
 }
 
 .qodi{
@@ -77,6 +79,10 @@
   @media (max-width: $mantine-breakpoint-md) {
     color: #d0eded;
   }
+}
+
+.hero{
+  margin-top: 12vh;
 }
 
 .backgroundBlob {
