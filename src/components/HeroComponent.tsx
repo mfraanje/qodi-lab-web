@@ -9,7 +9,6 @@ import {
   Paper,
   Transition,
   Stack,
-  Box,
 } from '@mantine/core';
 import classes from './Components.module.css';
 import { IconAt } from '@tabler/icons-react';
@@ -49,7 +48,7 @@ export function HeroComponent() {
           {/* <Text c='violet.9' mt='md' fw={700} size='xs'>
               Qodi Lab - Development
             </Text> */}
-          <Stack>
+          <Stack gap={0}>
             <Transition
               mounted={mounted}
               transition='fade-down'
@@ -89,71 +88,80 @@ export function HeroComponent() {
                     </Text>
                   </div>
 
-                  <Box>
-                    <Transition
-                      mounted={emailSent}
-                      transition='fade-left'
-                      duration={400}
-                      timingFunction='ease'
-                    >
-                      {(styles) => (
-                        <Paper
-                          style={styles}
-                          p={'xs'}
-                          px={'lg'}
-                          mt={'xl'}
-                          bg={'#51A3A3'}
-                          radius={'md'}
-                        >
-                          <Text size='xs' fw={700} mb={1} c={'white'}>
-                            Bedankt voor je interesse!
-                          </Text>
-                          <Text size={'xs'} c={'white'}>
-                            We hebben je e-mailadres ontvangen en we zullen snel
-                            contact met je opnemen om je vraag te bespreken en
-                            de mogelijkheden door te nemen.
-                          </Text>
-                        </Paper>
-                      )}
-                    </Transition>
-                    {!emailSent && (
-                      <>
-                        <form
-                          onSubmit={form.onSubmit((values) =>
-                            handleSubmit(values.email)
-                          )}
-                        >
-                          <Grid mt={'1rem'}>
-                            <Grid.Col span={{ base: 12, md: 8 }}>
-                              <TextInput
-                                leftSectionPointerEvents='none'
-                                leftSection={icon}
-                                placeholder='Email'
-                                size='sm'
-                                type='email'
-                                name='email'
-                                id='email'
-                                required
-                                autoComplete='email'
-                                key={form.key('email')}
-                                {...form.getInputProps('email')}
-                              />
-                            </Grid.Col>
-                            <Grid.Col span={2}>
-                              <Button
-                                radius='sm'
-                                size='sm'
-                                className={classes.control}
-                                type='submit'
-                              >
-                                Vraag aan
-                              </Button>
-                            </Grid.Col>
-                          </Grid>
-                        </form>
-                      </>
+                  <Transition
+                    mounted={emailSent}
+                    transition='fade-left'
+                    duration={400}
+                    timingFunction='ease'
+                  >
+                    {(styles) => (
+                      <Paper
+                        style={styles}
+                        p={'xs'}
+                        px={'lg'}
+                        mt={'xl'}
+                        bg={'#51A3A3'}
+                        radius={'md'}
+                      >
+                        <Text size='xs' fw={700} mb={1} c={'white'}>
+                          Bedankt voor je interesse!
+                        </Text>
+                        <Text size={'xs'} c={'white'}>
+                          We hebben je e-mailadres ontvangen en we zullen snel
+                          contact met je opnemen om je vraag te bespreken en de
+                          mogelijkheden door te nemen.
+                        </Text>
+                      </Paper>
                     )}
-                  </Box>
+                  </Transition>
+                </div>
+              )}
+            </Transition>
+            <Transition
+              mounted={mounted}
+              transition='fade-up'
+              duration={800}
+              timingFunction='ease'
+            >
+              {(styles) => (
+                <div style={styles}>
+                  {!emailSent && (
+                    <>
+                      <form
+                        onSubmit={form.onSubmit((values) =>
+                          handleSubmit(values.email)
+                        )}
+                      >
+                        <Grid mt={'1rem'}>
+                          <Grid.Col span={{ base: 12, md: 8 }}>
+                            <TextInput
+                              leftSectionPointerEvents='none'
+                              leftSection={icon}
+                              placeholder='Email'
+                              size='sm'
+                              type='email'
+                              name='email'
+                              id='email'
+                              required
+                              autoComplete='email'
+                              key={form.key('email')}
+                              {...form.getInputProps('email')}
+                            />
+                          </Grid.Col>
+                          <Grid.Col span={2}>
+                            <Button
+                              radius='sm'
+                              size='sm'
+                              className={classes.control}
+                              type='submit'
+                            >
+                              Vraag aan
+                            </Button>
+                          </Grid.Col>
+                        </Grid>
+                      </form>
+                    </>
+                  )}
                 </div>
               )}
             </Transition>

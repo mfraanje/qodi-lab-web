@@ -57,6 +57,10 @@
   color: #51A3A3;
 }
 
+.subtitle {
+  color: #3F3D56;
+}
+
 .control {
   @media (max-width: $mantine-breakpoint-xs) {
     flex: 1;
