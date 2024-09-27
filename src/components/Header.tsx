@@ -5,21 +5,15 @@ import { useEffect, useState } from 'react';
 
 export default function Header() {
   const [switched, setSwitched] = useState(false);
-  const [subtitle, setSubtitle] = useState('Lab');
-  const allSubtitles = [
-    'Lab',
-    'Development',
-    'Consulting',
-    'Data',
-    'AI',
-    'Tech',
-  ];
+  const mainSubtitle = 'Lab';
+  const [subtitle, setSubtitle] = useState(mainSubtitle);
+  const allSubtitles = ['Tech', 'Development', 'Consulting', 'Data', 'AI'];
   useEffect(() => {
     setSwitched(true);
     subtitleTimer();
   }, []);
 
-  let subtitleIndex = 0;
+  let subtitleIndex = 1;
 
   function subtitleTimer() {
     const timer = setTimeout(async () => {
@@ -40,7 +34,7 @@ export default function Header() {
     } else {
       setSwitched(false);
       await delay(400).then(() => {
-        setSubtitle(allSubtitles[0]);
+        setSubtitle(mainSubtitle);
         subtitleIndex = 0;
         setSwitched(true);
       });
