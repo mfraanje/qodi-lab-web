@@ -25,10 +25,11 @@ export default function RootLayout({
       </head>
       <body className={styles.body}>
         <MantineProvider theme={theme}>
-          {children}
-          <div className={styles.footer}>
-            {' '}
-            <Footer></Footer>
+          <div className={styles.main}>{children}</div>
+          <div className={styles.footerWrapper}>
+            <div className={styles.footer}>
+              <Footer></Footer>
+            </div>
           </div>
           <div className={styles.header}>
             <Header></Header>

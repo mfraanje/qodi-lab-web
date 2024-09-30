@@ -1,13 +1,35 @@
-import { Tooltip, Image } from '@mantine/core';
+import { Tooltip, Image, Transition } from '@mantine/core';
+import { useEffect, useState } from 'react';
 
-function ClientCard({ name, logo, url }: any) {
+function ClientCard({ name, logo, height = 50 }: any) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   return (
     <>
-      <Tooltip label={name}>
-        <a href={url}>
-          <Image fit='contain' w={100} h={50} mr='lg' src={logo} alt='' />
-        </a>
-      </Tooltip>
+      <Transition
+        mounted={mounted}
+        transition='slide-right'
+        duration={800}
+        enterDelay={1000}
+        timingFunction='ease'
+      >
+        {(styles) => (
+          <div style={styles}>
+            <Tooltip label={name}>
+              <Image
+                fit='contain'
+                w={70}
+                h={height}
+                mr='lg'
+                src={logo}
+                alt=''
+              />
+            </Tooltip>
+          </div>
+        )}
+      </Transition>
     </>
   );
 }
