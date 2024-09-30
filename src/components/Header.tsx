@@ -38,9 +38,7 @@ export default function Header() {
         subtitleIndex = 0;
         setSwitched(true);
       });
-      await delay(10000).then(() => {
-        rotateSubtitle();
-      });
+      rotateSubtitle();
     }
   }
 
