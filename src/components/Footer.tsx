@@ -3,18 +3,9 @@ import styles from './Components.module.css';
 
 export default function Footer() {
   return (
-    <div
-      style={{
-        width: '100vw',
-        height: '125px',
-        background: '#3F3D56',
-        position: 'absolute',
-        display: 'flex',
-        bottom: 0,
-      }}
-    >
-      <Container size={'lg'} className={styles.footer}>
-        <Text c='dimmed' size='xs'>
+    <div className={styles.footer}>
+      <Container size={'lg'} className={styles.footerText}>
+        <Text c='#69668F' size='xs'>
           © 2024 Qodi lab <br />
           info@qodilab.com
           <br />

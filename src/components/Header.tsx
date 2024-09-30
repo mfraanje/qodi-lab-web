@@ -38,9 +38,7 @@ export default function Header() {
         subtitleIndex = 0;
         setSwitched(true);
       });
-      await delay(10000).then(() => {
-        rotateSubtitle();
-      });
+      rotateSubtitle();
     }
   }
 
@@ -52,7 +50,10 @@ export default function Header() {
         <Group py={'0.5rem'} justify='space-between'>
           <Title className={classes.logoText} order={3}>
             <Group gap={8}>
-              <span className={classes.qodi}>Qodi</span>{' '}
+              <span>
+                <span className={classes.qodi}>Qodi</span>
+                {/* t */}
+              </span>{' '}
               <Transition
                 mounted={switched}
                 transition='fade-down'

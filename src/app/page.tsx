@@ -1,4 +1,5 @@
 'use client';
+import ClientListComponent from '@/components/ClientListComponent';
 import HeroBackground from '@/components/HeroBackground';
 import { HeroComponent } from '@/components/HeroComponent';
 import React from 'react';
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <HeroBackground></HeroBackground>
       <HeroComponent />
+      <ClientListComponent />
     </>
   );
 }
