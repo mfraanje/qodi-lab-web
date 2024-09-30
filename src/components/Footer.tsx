@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className={styles.footer}>
       <Container size={'lg'} className={styles.footerText}>
-        <Text c='dimmed' size='xs'>
+        <Text c='#69668F' size='xs'>
           © 2024 Qodi lab <br />
           info@qodilab.com
           <br />

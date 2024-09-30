@@ -64,7 +64,7 @@ export default function HeroBackground() {
         {(styles) => (
           <div style={styles}>
             <Image
-              src='./image.svg'
+              src='./images/image.svg'
               pos='absolute'
               right={80}
               top={150}

@@ -27,6 +27,7 @@ export default function RootLayout({
         <MantineProvider theme={theme}>
           {children}
           <div className={styles.footer}>
+            {' '}
             <Footer></Footer>
           </div>
           <div className={styles.header}>
