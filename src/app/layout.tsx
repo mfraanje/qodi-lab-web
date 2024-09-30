@@ -26,8 +26,12 @@ export default function RootLayout({
       <body className={styles.body}>
         <MantineProvider theme={theme}>
           {children}
-          <Footer></Footer>
-          <Header></Header>
+          <div className={styles.footer}>
+            <Footer></Footer>
+          </div>
+          <div className={styles.header}>
+            <Header></Header>
+          </div>
         </MantineProvider>
       </body>
     </html>

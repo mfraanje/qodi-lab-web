@@ -87,18 +87,21 @@
 
 .hero{
   margin-top: 12vh;
+  min-height: 65vh;
 }
 
 .backgroundBlob {
   position: absolute;
-  top: -30vh;
-  right: -625px;
+  top: 0;
+  right: 0;
+  overflow: hidden;
   z-index: -10 !important;
-  height: 150vh;
+  height: 100vh;
   @media (max-width: $mantine-breakpoint-md) {
     display: none;
   }
 }
+
 
 .highlight {
   /* color: light-dark(var(--mantine-color-lime-6), var(--mantine-color-lime-4)); */
@@ -106,11 +109,22 @@
 
 }
 
-.footer {
+.footer{
+      width: 100vw;
+        height: 125px;
+        background:#3F3D56;
+        display: flex;
+        position: absolute;
+        bottom: 0,
+        marg
+}
+
+.footerText {
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
   
 
   @media (max-width: $mantine-breakpoint-sm) {
