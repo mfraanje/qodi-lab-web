@@ -7,7 +7,13 @@ export default function Header() {
   const [switched, setSwitched] = useState(false);
   const mainSubtitle = 'Lab';
   const [subtitle, setSubtitle] = useState(mainSubtitle);
-  const allSubtitles = ['Tech', 'Development', 'Consulting', 'Data', 'AI'];
+  const allSubtitles = [
+    'Tech',
+    'Development',
+    'Consulting',
+    'Data',
+    'Artificial Intelligence',
+  ];
   useEffect(() => {
     setSwitched(true);
     subtitleTimer();

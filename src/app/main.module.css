@@ -5,9 +5,13 @@
     /* background-color: #fbf6df; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
+    min-height: 100vh;
     /* overflow-x: hidden; */
 }
 
+.footerWrapper{
+    position: relative;
+}
 .footer{
     width: 100%;
     position:absolute;
@@ -18,3 +22,9 @@
     position: fixed;
     top: 0;
 }
+
+.main{
+    min-height: 100vh;
+    position: relative;
+}
+

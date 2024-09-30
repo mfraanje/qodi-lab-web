@@ -86,8 +86,8 @@
 }
 
 .hero{
-  margin-top: 12vh;
-  min-height: 40vh;
+  padding-top: 12vh;
+  min-height: 50vh;
 }
 
 .backgroundBlob {
@@ -102,11 +102,9 @@
   }
 }
 
-
 .highlight {
   /* color: light-dark(var(--mantine-color-lime-6), var(--mantine-color-lime-4)); */
     color: #EF6F6C;
-
 }
 
 .footer{
