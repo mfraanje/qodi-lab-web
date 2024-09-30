@@ -51,7 +51,8 @@ export default function Header() {
           <Title className={classes.logoText} order={3}>
             <Group gap={8}>
               <span>
-                <span className={classes.qodi}>Qodi</span>t
+                <span className={classes.qodi}>Qodi</span>
+                {/* t */}
               </span>{' '}
               <Transition
                 mounted={switched}
