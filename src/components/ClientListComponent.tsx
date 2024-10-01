@@ -10,8 +10,10 @@ import {
 } from '@mantine/core';
 import { useEffect, useState } from 'react';
 import ClientCard from './ClientCard';
+import { useTranslations } from 'next-intl';
 
 export default function ClientListComponent() {
+  const t = useTranslations('ClientList');
   const [mounted, setMounted] = useState(false);
   const clientList = [
     {
@@ -94,7 +96,7 @@ export default function ClientListComponent() {
               <Box w={'100%'} pos={'absolute'} top={110}>
                 <Divider color='#47445F'></Divider>
                 <Text c={'#595577'} size={rem(10)} mt={'md'} ta={'center'}>
-                  Organisaties waar onze developers oplossingen hebben geleverd.
+                  {t('description')}
                 </Text>
               </Box>
             </Container>

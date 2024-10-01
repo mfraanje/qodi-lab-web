@@ -1,0 +1,13 @@
+{
+    "HeroPage": {
+        "title": ["Software,","simpel", "en op maat."],
+        "description": "Software oplossingen hoeven niet ontoegankelijk te zijn. Of je nu een gebruiksvriendelijke applicatie nodig hebt of een volledig geïntegreerd platform, wij helpen je om jouw ideeën in krachtige, schaalbare tools te transformeren die het verschil maken.",
+        "cta": ["Geïnteresseerd?", "Laat je e-mail achter om volledig gratis en vrijblijvend over je idee of probleem te sparren!"],
+        "button": "Vraag aan",
+        "thanksTitle": "Bedankt voor je interesse!",
+        "thanksDescription": "We hebben je e-mailadres ontvangen en we zullen snel contact met je opnemen om je vraag te bespreken en de mogelijkheden door te nemen."
+    },
+    "ClientList": {
+        "description":"Organisaties waar onze developers oplossingen hebben geleverd."
+    }
+}
