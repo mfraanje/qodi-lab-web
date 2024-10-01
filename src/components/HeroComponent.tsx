@@ -155,7 +155,7 @@ export function HeroComponent() {
                               className={classes.control}
                               type='submit'
                             >
-                              Vraag aan
+                              {t('button')}
                             </Button>
                           </Grid.Col>
                         </Grid>

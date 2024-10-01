@@ -40,7 +40,7 @@ export default async function RootLayout({
               </div>
             </div>
             <div className={styles.header}>
-              <Header></Header>
+              <Header locale={locale}></Header>
             </div>
           </NextIntlClientProvider>
         </MantineProvider>
