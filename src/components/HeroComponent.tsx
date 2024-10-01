@@ -15,8 +15,10 @@ import { IconAt } from '@tabler/icons-react';
 import { useForm } from '@mantine/form';
 import { useEffect, useState } from 'react';
 import { sendInterestEmail } from '@/services/mail.service';
+import { useTranslations } from 'next-intl';
 
 export function HeroComponent() {
+  const t = useTranslations('HeroPage');
   const icon = <IconAt style={{ width: rem(16), height: rem(16) }} />;
   const [emailSent, setEmailSent] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -58,8 +60,12 @@ export function HeroComponent() {
               {(styles) => (
                 <div style={styles}>
                   <Title className={classes.title}>
-                    Software, <br />
-                    <span className={classes.highlight}>simpel</span> en op maat
+                    {t('title.0')}
+                    <br />
+                    <span className={classes.highlight}>
+                      {t('title.1')}
+                    </span>{' '}
+                    {t('title.2')}
                   </Title>
                 </div>
               )}
@@ -74,17 +80,12 @@ export function HeroComponent() {
                 <div style={styles}>
                   <div className={classes.content}>
                     <Text c='#3F3D56' my='xl' size='sm'>
-                      Software oplossingen hoeven niet ontoegankelijk te zijn.
-                      Of je nu een gebruiksvriendelijke applicatie nodig hebt of
-                      een volledig geïntegreerd platform, wij helpen je om jouw
-                      ideeën in krachtige, schaalbare tools te transformeren die
-                      het verschil maken. <br />
+                      {t('description')} <br />
                       <br />
                       <strong className={classes.highlight}>
-                        Geïnteresseerd?{' '}
+                        {t('cta.0')}{' '}
                       </strong>
-                      Laat je e-mail achter om volledig gratis en vrijblijvend
-                      over je idee of probleem te sparren!
+                      {t('cta.1')}
                     </Text>
                   </div>
 
@@ -102,14 +103,13 @@ export function HeroComponent() {
                         mt={'xl'}
                         bg={'#51A3A3'}
                         radius={'md'}
+                        w={{ sm: '100%', md: '50%' }}
                       >
                         <Text size='xs' fw={700} mb={1} c={'white'}>
-                          Bedankt voor je interesse!
+                          {t('thanksTitle')}
                         </Text>
                         <Text size={'xs'} c={'white'}>
-                          We hebben je e-mailadres ontvangen en we zullen snel
-                          contact met je opnemen om je vraag te bespreken en de
-                          mogelijkheden door te nemen.
+                          {t('thanksDescription')}
                         </Text>
                       </Paper>
                     )}
@@ -155,7 +155,7 @@ export function HeroComponent() {
                               className={classes.control}
                               type='submit'
                             >
-                              Vraag aan
+                              {t('button')}
                             </Button>
                           </Grid.Col>
                         </Grid>

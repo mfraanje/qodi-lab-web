@@ -1,9 +1,21 @@
 'use client';
-import { Container, Group, Title, Text, Transition } from '@mantine/core';
+import {
+  Container,
+  Group,
+  Title,
+  Text,
+  Transition,
+  Combobox,
+  useCombobox,
+  Image,
+  ActionIcon,
+} from '@mantine/core';
 import classes from './Components.module.css';
-import { useEffect, useState } from 'react';
+import { startTransition, useEffect, useState } from 'react';
+import { Locale } from '@/i18n/config';
+import { setUserLocale } from '@/services/locale.service';
 
-export default function Header() {
+export default function Header({ locale }: { locale: string }) {
   const [switched, setSwitched] = useState(false);
   const mainSubtitle = 'Lab';
   const [subtitle, setSubtitle] = useState(mainSubtitle);
@@ -14,6 +26,15 @@ export default function Header() {
     'Data',
     'Artificial Intelligence',
   ];
+
+  const languageOptions = [
+    { language: 'nl', flag: 'nl-flag.svg' },
+    { language: 'en', flag: 'en-flag.svg' },
+  ];
+  const [selectedLanguage, setSelectedLanguage] = useState({
+    language: locale,
+    flag: `${locale}-flag.svg`,
+  });
   useEffect(() => {
     setSwitched(true);
     subtitleTimer();
@@ -50,6 +71,23 @@ export default function Header() {
 
   const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
+  const combobox = useCombobox({
+    onDropdownClose: () => combobox.resetSelectedOption(),
+  });
+
+  function onChangeLanguage(value: string) {
+    const locale = value as Locale;
+    startTransition(() => {
+      setUserLocale(locale);
+    });
+  }
+
+  const options = languageOptions.map((item) => (
+    <Combobox.Option value={item.language} key={item.language}>
+      <Image h={25} w={25} src={item.flag}></Image>
+    </Combobox.Option>
+  ));
+
   return (
     <div className={classes.header}>
       <Container size='lg' pos={'relative'}>
@@ -74,9 +112,36 @@ export default function Header() {
               </Transition>
             </Group>
           </Title>
-          <Text mt={'0.25rem'} size='sm' fw={500} visibleFrom='xs'>
-            Software Development | Consulting
-          </Text>
+          <Group justify='flex-end'>
+            <Text mt={'0.25rem'} size='sm' fw={500} visibleFrom='xs'>
+              Software Development | Consulting
+            </Text>
+            <Combobox
+              store={combobox}
+              width={55}
+              position='bottom'
+              withArrow
+              onOptionSubmit={(val) => {
+                setSelectedLanguage({ language: val, flag: `${val}-flag.svg` });
+                onChangeLanguage(val);
+                combobox.closeDropdown();
+              }}
+            >
+              <Combobox.Target>
+                <ActionIcon
+                  mt={5}
+                  variant='subtle'
+                  onClick={() => combobox.toggleDropdown()}
+                >
+                  <Image src={selectedLanguage.flag}></Image>
+                </ActionIcon>
+              </Combobox.Target>
+
+              <Combobox.Dropdown>
+                <Combobox.Options>{options}</Combobox.Options>
+              </Combobox.Dropdown>
+            </Combobox>
+          </Group>
         </Group>
       </Container>
     </div>

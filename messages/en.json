@@ -1,0 +1,14 @@
+{
+    "HeroPage": {
+        "title": ["Software,","tailored", "and effortless."],
+        "description": "Software solutions should always be within reach. From user-friendly applications to fully integrated platforms, we turn your ideas into powerful, scalable tools that drive real impact.",
+        "cta": ["Interested?", "Enter your email to start a no-obligation, free consultation about your software idea or challenge!"],
+        "button": "Let's Talk",
+        "thanksTitle": "Thanks for your interest!",
+        "thanksDescription": "We've received your e-mailadd and we'll get back to you soon to discuss your idea or problem and talk about the possibilities."
+  
+    },
+    "ClientList": {
+        "description":"Organizations where our developers have implemented tailored solutions."
+    }
+}
