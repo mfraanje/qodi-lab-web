@@ -70,7 +70,16 @@ export default function ClientListComponent() {
     >
       {(styles) => (
         <div style={styles}>
-          <Box w={'100%'} p='md' bg={'#3F3D56'} mih={300}>
+          <Box
+            w={'100%'}
+            p='md'
+            bg={'#3F3D56'}
+            mih={300}
+            style={{
+              boxShadow:
+                '0px 4px 8px 10px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19)',
+            }}
+          >
             <Container size={'lg'} pos={'relative'}>
               <Group m={'lg'} justify={'center'} c={'white'} w={'100%'}>
                 {clientList.map((client) => (
