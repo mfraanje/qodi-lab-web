@@ -95,7 +95,7 @@ export default function Header({ locale }: { locale: string }) {
           <Title className={classes.logoText} order={3}>
             <Group gap={8}>
               <span>
-                <span className={classes.qodi}>Qodi</span>
+                <span className={classes.qodi}>Qod</span>it
                 {/* t */}
               </span>{' '}
               <Transition
