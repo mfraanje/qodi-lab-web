@@ -1,18 +1,14 @@
 'use client';
-import { Box, Text, Container, rem, Divider, Transition } from '@mantine/core';
+import { Box, Text, Container, rem, Divider } from '@mantine/core';
 import ClientCard from './ClientCard';
 import { useTranslations } from 'next-intl';
 import useEmblaCarousel from 'embla-carousel-react';
 import AutoScroll from 'embla-carousel-auto-scroll';
 import embla from './Embla.module.css';
-import { useEffect, useState } from 'react';
 
 export default function ClientListComponent() {
   const t = useTranslations('ClientList');
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+
   const clientList = [
     {
       name: 'JWPlayer',
