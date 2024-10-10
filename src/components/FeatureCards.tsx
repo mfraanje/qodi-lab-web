@@ -7,28 +7,29 @@ import {
   Box,
   Transition,
 } from '@mantine/core';
-import { IconTruck, IconCertificate, IconCoin } from '@tabler/icons-react';
+import { IconCloud, IconDatabase, IconCode } from '@tabler/icons-react';
 import classes from './Components.module.css';
 import { useEffect, useState } from 'react';
 
 const mockdata = [
   {
-    icon: IconTruck,
-    title: 'Product ontwikkeling',
+    icon: IconCode,
+    title: 'Productontwikkeling | E2E',
     description:
-      'As electricity builds up inside its body, it becomes more aggressive. One theory is that the electricity.',
+      'Van idee tot eindproduct: wij helpen je om innovatieve software-oplossingen te ontwikkelen die naadloos aansluiten op jouw unieke behoeften. Ons team zorgt voor een gebruiksvriendelijke en schaalbare applicatie die jouw bedrijf vooruit helpt.',
   },
   {
-    icon: IconCertificate,
-    title: 'Data Infrastructuur',
+    icon: IconDatabase,
+    title:
+      '                             Data-infrastructuur                             ',
     description:
-      'Slakoth’s heart beats just once a minute. Whatever happens, it is content to loaf around motionless.',
+      'Betrouwbare en efficiënte data-oplossingen zijn essentieel voor jouw bedrijf. Wij ontwerpen en bouwen robuuste infrastructuren waarmee je gegevens veilig en gestructureerd kunt opslaan, verwerken en analyseren.',
   },
   {
-    icon: IconCoin,
-    title: 'Cloud Ontwikkeling',
+    icon: IconCloud,
+    title: 'Cloud Omgevingen',
     description:
-      'Thought to have gone extinct, Relicanth was given a name that is a variation of the name of the person who discovered.',
+      'Zet je bedrijf in de cloud met onze op maat gemaakte cloud-oplossingen. Of je nu je huidige systemen wilt migreren of een volledig nieuw platform wilt opzetten, wij bieden flexibele, veilige en schaalbare cloud-diensten.',
   },
 ];
 export function FeatureCards() {
@@ -52,12 +53,12 @@ export function FeatureCards() {
             radius='md'
             className={classes.card}
             padding='xl'
-            mih={300}
+            mih={400}
           >
             <feature.icon
               style={{ width: rem(50), height: rem(50) }}
               stroke={2}
-              color={'#EF6F6C'}
+              color={'#525067'}
             />
             <Text
               fz='lg'
@@ -78,34 +79,12 @@ export function FeatureCards() {
   ));
 
   return (
-    <Box mih={300}>
-      <Transition
-        mounted={mounted}
-        transition='slide-up'
-        duration={800}
-        enterDelay={200}
-        timingFunction='ease'
-      >
-        {(styles) => (
-          <div style={styles}>
-            <Box
-              w={'100%'}
-              p='md'
-              bg={'#3F3D56'}
-              mih={300}
-              style={{
-                boxShadow: '0px -10px 20px 0px rgba(0, 0, 0, 0.2)',
-              }}
-            >
-              <Container size='lg' py='xl'>
-                <SimpleGrid cols={{ base: 1, md: 3 }} spacing='xl' mt={0}>
-                  {features}
-                </SimpleGrid>
-              </Container>
-            </Box>
-          </div>
-        )}
-      </Transition>
+    <Box mih={300} w={'100%'} p='md' bg={'#3F3D56'} pb={100}>
+      <Container size='lg' py='xl'>
+        <SimpleGrid cols={{ base: 1, md: 3 }} spacing='xl' mt={0}>
+          {features}
+        </SimpleGrid>
+      </Container>
     </Box>
   );
 }

@@ -1,13 +1,18 @@
 'use client';
-import { Box, Text, Container, rem, Divider } from '@mantine/core';
+import { Box, Text, Container, rem, Divider, Transition } from '@mantine/core';
 import ClientCard from './ClientCard';
 import { useTranslations } from 'next-intl';
 import useEmblaCarousel from 'embla-carousel-react';
 import AutoScroll from 'embla-carousel-auto-scroll';
 import embla from './Embla.module.css';
+import { useEffect, useState } from 'react';
 
 export default function ClientListComponent() {
   const t = useTranslations('ClientList');
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   const clientList = [
     {
       name: 'JWPlayer',
@@ -58,41 +63,39 @@ export default function ClientListComponent() {
   ]);
 
   return (
-    <Box w={'100%'} p='md' bg={'#3F3D56'} mih={300}>
-      <Container size={'lg'} pos={'relative'}>
-        <div className={embla.embla}>
-          <div className={embla.embla__viewport} ref={emblaRef}>
-            <div className={embla.embla__container}>
-              {/* <Group
+    <Container size={'lg'} pos={'relative'} pb={100}>
+      <div className={embla.embla}>
+        <div className={embla.embla__viewport} ref={emblaRef}>
+          <div className={embla.embla__container}>
+            {/* <Group
                   m={'lg'}
                   justify={'center'}
                   gap={20}
                   c={'white'}
                   w={'100%'}
                 > */}
-              {clientList.map((client) => (
-                <div className={embla.embla__slide} key={client.name}>
-                  <div className={embla.embla__slide__number}>
-                    <ClientCard
-                      key={client.name}
-                      name={client.name}
-                      logo={client.logo}
-                      height={client.height}
-                    />
-                  </div>
+            {clientList.map((client) => (
+              <div className={embla.embla__slide} key={client.name}>
+                <div className={embla.embla__slide__number}>
+                  <ClientCard
+                    key={client.name}
+                    name={client.name}
+                    logo={client.logo}
+                    height={client.height}
+                  />
                 </div>
-              ))}
-              {/* </Group> */}
-            </div>
+              </div>
+            ))}
+            {/* </Group> */}
           </div>
         </div>
-        <Box w={'100%'} pos={'absolute'} top={110}>
-          <Divider color='#47445F'></Divider>
-          <Text c={'#595577'} size={rem(10)} mt={'md'} ta={'center'}>
-            {t('description')}
-          </Text>
-        </Box>
-      </Container>
-    </Box>
+      </div>
+      <Box w={'100%'} pos={'absolute'} top={110}>
+        <Divider color='#47445F'></Divider>
+        <Text c={'#595577'} size={rem(10)} mt={'md'} ta={'center'}>
+          {t('description')}
+        </Text>
+      </Box>
+    </Container>
   );
 }
