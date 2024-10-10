@@ -7,7 +7,7 @@ export default function Footer() {
       <Container size={'lg'} className={styles.footerText}>
         <Text c='#6B668F' size='xs'>
           © 2024 Qodit lab <br />
-          info@mickeyfraanje.com
+          info@qoditlab.com
           <br />
           KVK-nummer: 93578776 <br />
           Btw-identificatienummer: NL005029056B30
