@@ -1,6 +1,5 @@
 'use client';
-import { Box, Text, Container, Transition, rem, Divider } from '@mantine/core';
-import { useEffect, useState } from 'react';
+import { Box, Text, Container, rem, Divider } from '@mantine/core';
 import ClientCard from './ClientCard';
 import { useTranslations } from 'next-intl';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -9,7 +8,6 @@ import embla from './Embla.module.css';
 
 export default function ClientListComponent() {
   const t = useTranslations('ClientList');
-  const [mounted, setMounted] = useState(false);
   const clientList = [
     {
       name: 'JWPlayer',
@@ -54,75 +52,47 @@ export default function ClientListComponent() {
     },
     { name: 'De Zorgkeuze', logo: '/logos/zorgkeuze-logo.png', height: 75 },
   ];
-  useEffect(() => {
-    initialize();
-  }, []);
 
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
     AutoScroll({ playOnInit: true, direction: 'backward', speed: 0.5 }),
   ]);
 
-  const initialize = async () => {
-    setMounted(true);
-  };
-
   return (
-    <Transition
-      mounted={mounted}
-      transition='slide-up'
-      duration={800}
-      enterDelay={200}
-      timingFunction='ease'
-    >
-      {(styles) => (
-        <div style={styles}>
-          <Box
-            w={'100%'}
-            p='md'
-            bg={'#3F3D56'}
-            mih={300}
-            style={{
-              boxShadow:
-                '0px 4px 8px 10px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19)',
-            }}
-          >
-            <Container size={'lg'} pos={'relative'}>
-              <div className={embla.embla}>
-                <div className={embla.embla__viewport} ref={emblaRef}>
-                  <div className={embla.embla__container}>
-                    {/* <Group
+    <Box w={'100%'} p='md' bg={'#3F3D56'} mih={300}>
+      <Container size={'lg'} pos={'relative'}>
+        <div className={embla.embla}>
+          <div className={embla.embla__viewport} ref={emblaRef}>
+            <div className={embla.embla__container}>
+              {/* <Group
                   m={'lg'}
                   justify={'center'}
                   gap={20}
                   c={'white'}
                   w={'100%'}
                 > */}
-                    {clientList.map((client) => (
-                      <div className={embla.embla__slide} key={client.name}>
-                        <div className={embla.embla__slide__number}>
-                          <ClientCard
-                            key={client.name}
-                            name={client.name}
-                            logo={client.logo}
-                            height={client.height}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                    {/* </Group> */}
+              {clientList.map((client) => (
+                <div className={embla.embla__slide} key={client.name}>
+                  <div className={embla.embla__slide__number}>
+                    <ClientCard
+                      key={client.name}
+                      name={client.name}
+                      logo={client.logo}
+                      height={client.height}
+                    />
                   </div>
                 </div>
-              </div>
-              <Box w={'100%'} pos={'absolute'} top={110}>
-                <Divider color='#47445F'></Divider>
-                <Text c={'#595577'} size={rem(10)} mt={'md'} ta={'center'}>
-                  {t('description')}
-                </Text>
-              </Box>
-            </Container>
-          </Box>
+              ))}
+              {/* </Group> */}
+            </div>
+          </div>
         </div>
-      )}
-    </Transition>
+        <Box w={'100%'} pos={'absolute'} top={110}>
+          <Divider color='#47445F'></Divider>
+          <Text c={'#595577'} size={rem(10)} mt={'md'} ta={'center'}>
+            {t('description')}
+          </Text>
+        </Box>
+      </Container>
+    </Box>
   );
 }
