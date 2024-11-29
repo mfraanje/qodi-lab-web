@@ -7,6 +7,14 @@
         "thanksTitle": "Bedankt voor je interesse!",
         "thanksDescription": "We hebben je e-mailadres ontvangen en we zullen snel contact met je opnemen om je vraag te bespreken en de mogelijkheden door te nemen."
     },
+    "FeatureCards": {
+        "productTitle": "Productontwikkeling | E2E",
+        "productDevelopment": "Van idee tot eindproduct: wij helpen je om innovatieve software-oplossingen te ontwikkelen die naadloos aansluiten op jouw unieke behoeften. Ons team zorgt voor een gebruiksvriendelijke en schaalbare applicatie die jouw bedrijf vooruit helpt.",
+        "dataTitle": "Data-infrastructuur",
+        "dataInfra": "Betrouwbare en efficiënte data-oplossingen zijn essentieel voor jouw bedrijf. Wij ontwerpen en bouwen robuuste infrastructuren waarmee je gegevens veilig en gestructureerd kunt opslaan, verwerken en analyseren.",
+        "websitesTitle": "Websites | Platforms",
+        "websitesPlatforms": "Effectieve en professionele websites zijn onmisbaar voor jouw online succes. Wij ontwerpen en ontwikkelen gebruiksvriendelijke en responsive websites die naadloos aansluiten bij jouw merk en doelstellingen."
+    },
     "ClientList": {
         "description":"Organisaties waar onze developers maatwerkoplossingen hebben geïmplementeerd."
     }

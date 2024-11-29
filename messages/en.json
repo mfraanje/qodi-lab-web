@@ -8,6 +8,14 @@
         "thanksDescription": "We've received your e-mailadd and we'll get back to you soon to discuss your idea or problem and talk about the possibilities."
   
     },
+        "FeatureCards": {
+            "productTitle": "Product Development | E2E",
+  "productDevelopment": "From idea to end product: we help you develop innovative software solutions that seamlessly meet your unique needs. Our team ensures a user-friendly and scalable application that propels your business forward.",
+  "dataTitle": "Data Infrastructure",
+  "dataInfra": "Reliable and efficient data solutions are essential for your business. We design and build robust infrastructures to securely and systematically store, process, and analyze your data.",
+  "websitesTitle": "Websites | Platforms",
+  "websitesPlatforms": "Effective and professional websites are essential for your online success. We design and develop user-friendly and responsive websites that perfectly align with your brand and objectives."
+},
     "ClientList": {
         "description":"Organizations where our developers have implemented tailored solutions."
     }

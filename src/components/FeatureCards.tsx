@@ -7,36 +7,36 @@ import {
   Box,
   Transition,
 } from '@mantine/core';
-import { IconCloud, IconDatabase, IconCode } from '@tabler/icons-react';
+import { IconDatabase, IconCode, IconWorld } from '@tabler/icons-react';
 import classes from './Components.module.css';
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
-const mockdata = [
-  {
-    icon: IconCode,
-    title: 'Productontwikkeling | E2E',
-    description:
-      'Van idee tot eindproduct: wij helpen je om innovatieve software-oplossingen te ontwikkelen die naadloos aansluiten op jouw unieke behoeften. Ons team zorgt voor een gebruiksvriendelijke en schaalbare applicatie die jouw bedrijf vooruit helpt.',
-  },
-  {
-    icon: IconDatabase,
-    title:
-      '                             Data-infrastructuur                             ',
-    description:
-      'Betrouwbare en efficiënte data-oplossingen zijn essentieel voor jouw bedrijf. Wij ontwerpen en bouwen robuuste infrastructuren waarmee je gegevens veilig en gestructureerd kunt opslaan, verwerken en analyseren.',
-  },
-  {
-    icon: IconCloud,
-    title: 'Cloud Omgevingen',
-    description:
-      'Zet je bedrijf in de cloud met onze op maat gemaakte cloud-oplossingen. Of je nu je huidige systemen wilt migreren of een volledig nieuw platform wilt opzetten, wij bieden flexibele, veilige en schaalbare cloud-diensten.',
-  },
-];
 export function FeatureCards() {
+  const t = useTranslations('FeatureCards');
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const mockdata = [
+    {
+      icon: IconCode,
+      title: t('productTitle'),
+      description: t('productDevelopment'),
+    },
+    {
+      icon: IconDatabase,
+      title: t('dataTitle'),
+      description: t('dataInfra'),
+    },
+    {
+      icon: IconWorld,
+      title: t('websitesTitle'),
+      description: t('websitesPlatforms'),
+    },
+  ];
+
   const features = mockdata.map((feature, index) => (
     <Transition
       key={feature.title}

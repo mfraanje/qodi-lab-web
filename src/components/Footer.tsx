@@ -8,7 +8,7 @@ export default function Footer() {
         <Text c='#6B668F' size='xs'>
           © 2024 Qodit lab <br />
           {/* info@qoditlab.com */}
-          <br />
+          {/* <br /> */}
           KVK-nummer: 93578776 <br />
           Btw-identificatienummer: NL005029056B30
         </Text>
