@@ -17,12 +17,13 @@ import { setUserLocale } from '@/services/locale.service';
 
 export default function Header({ locale }: { locale: string }) {
   const [switched, setSwitched] = useState(false);
-  const mainSubtitle = 'Lab';
+  const mainSubtitle = 'Software';
   const [subtitle, setSubtitle] = useState(mainSubtitle);
   const allSubtitles = [
     'Tech',
     'Development',
     'Consulting',
+    'Software',
     'Data',
     'Artificial Intelligence',
   ];
@@ -95,9 +96,9 @@ export default function Header({ locale }: { locale: string }) {
           <Title className={classes.logoText} order={3}>
             <Group gap={8}>
               <span>
-                <span className={classes.qodi}>Qod</span>it
-                {/* t */}
-              </span>{' '}
+                <span className={classes.qodi}>Qodi</span>
+              </span>
+              <span className={classes.slash}>{'/'}</span>
               <Transition
                 mounted={switched}
                 transition='fade-down'

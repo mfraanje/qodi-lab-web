@@ -6,9 +6,10 @@ export default function Footer() {
     <div className={styles.footer}>
       <Container size={'lg'} className={styles.footerText}>
         <Text c='#6B668F' size='xs'>
-          © 2024 Qodit lab <br />
-          {/* info@qoditlab.com */}
+          © 2024 Qodi Software <br />
+          {/* info@qodisoftware.com */}
           {/* <br /> */}
+          <br />
           KVK-nummer: 93578776 <br />
           Btw-identificatienummer: NL005029056B30
         </Text>
