@@ -93,7 +93,7 @@ export default function Header({ locale }: { locale: string }) {
     <div className={classes.header}>
       <Container size='lg' pos={'relative'}>
         <Group py={'0.5rem'} justify='space-between'>
-          <Title className={classes.logoText} order={3}>
+          <Title className={classes.logoText} order={4} mt={'0.15rem'}>
             <Group gap={0}>
               <span className={classes.qodi}>Qodi</span>
               <span className={classes.slash}>/</span>
@@ -113,7 +113,7 @@ export default function Header({ locale }: { locale: string }) {
           </Title>
           <Group justify='flex-end'>
             <Text
-              mt={'0.4rem'}
+              mt={'0.3rem'}
               size='sm'
               fw={500}
               visibleFrom='xs'

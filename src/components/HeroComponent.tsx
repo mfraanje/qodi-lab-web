@@ -53,7 +53,7 @@ export function HeroComponent() {
 
   return (
     <>
-      <Container size='lg' pos={'relative'} mb={100} className={classes.hero}>
+      <Container size='lg' pos={'relative'} mb={80} className={classes.hero}>
         <div className={classes.inner}>
           {/* <Text c='violet.9' mt='md' fw={700} size='xs'>
               Qodi Lab - Development

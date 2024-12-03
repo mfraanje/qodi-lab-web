@@ -30,12 +30,6 @@ export default function ClientListComponent() {
       logo: '/logos/bceducation-logo.svg',
       height: 40,
     },
-
-    // {
-    //   name: 'PGGM',
-    //   logo: '/logos/pggm-logo.svg',
-    //   height: 40,
-    // },
     {
       name: 'CM.com',
       logo: '/logos/cm-logo.svg',
@@ -59,7 +53,7 @@ export default function ClientListComponent() {
   ]);
 
   return (
-    <Container size={'lg'} pos={'relative'} pb={100}>
+    <Container size={'lg'} pos={'relative'} pb={100} mt={'xl'}>
       <div className={embla.embla}>
         <div className={embla.embla__viewport} ref={emblaRef}>
           <div className={embla.embla__container}>

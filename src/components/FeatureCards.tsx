@@ -79,7 +79,7 @@ export function FeatureCards() {
   ));
 
   return (
-    <Box mih={300} w={'100%'} p='md' bg={'#3F3D56'} pb={100}>
+    <Box mih={300} w={'100%'} p='md' pt={0} bg={'#3F3D56'} pb={100}>
       <Container size='lg' py='xl'>
         <SimpleGrid cols={{ base: 1, md: 3 }} spacing='xl' mt={0}>
           {features}
