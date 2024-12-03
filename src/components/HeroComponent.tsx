@@ -9,6 +9,7 @@ import {
   Paper,
   Transition,
   Stack,
+  Textarea,
 } from '@mantine/core';
 import classes from './Components.module.css';
 import { IconAt } from '@tabler/icons-react';
@@ -22,6 +23,7 @@ export function HeroComponent() {
   const icon = <IconAt style={{ width: rem(16), height: rem(16) }} />;
   const [emailSent, setEmailSent] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [openCommentField, setOpenCommentField] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -31,15 +33,21 @@ export function HeroComponent() {
     mode: 'uncontrolled',
     initialValues: {
       email: '',
+      comment: '',
     },
     validate: {
       email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Geen valide email'),
     },
+    onValuesChange: (values) => {
+      if (values.email !== '') {
+        setOpenCommentField(true);
+      }
+    },
   });
 
-  const handleSubmit = async (email: string) => {
-    console.log(email);
-    await sendInterestEmail(email);
+  const handleSubmit = async (email: string, comment: string) => {
+    console.log(comment);
+    await sendInterestEmail(email, comment);
     setEmailSent(true);
   };
 
@@ -98,8 +106,8 @@ export function HeroComponent() {
                     {(styles) => (
                       <Paper
                         style={styles}
-                        p={'xs'}
-                        px={'lg'}
+                        p={'lg'}
+                        px={'xl'}
                         mt={'xl'}
                         bg={'#51A3A3'}
                         radius={'md'}
@@ -129,11 +137,11 @@ export function HeroComponent() {
                     <>
                       <form
                         onSubmit={form.onSubmit((values) =>
-                          handleSubmit(values.email)
+                          handleSubmit(values.email, values.comment)
                         )}
                       >
-                        <Grid mt={'1rem'}>
-                          <Grid.Col span={{ base: 12, md: 8 }}>
+                        <Grid mt={'1rem'} align='flex-end'>
+                          <Grid.Col span={{ base: 12, xs: 8 }}>
                             <TextInput
                               leftSectionPointerEvents='none'
                               leftSection={icon}
@@ -148,9 +156,20 @@ export function HeroComponent() {
                               {...form.getInputProps('email')}
                             />
                           </Grid.Col>
+                          {openCommentField && (
+                            <Grid.Col span={{ base: 12, xs: 8 }}>
+                              <Textarea
+                                placeholder='Extra info (optioneel)'
+                                {...form.getInputProps('comment')}
+                              />
+                              {/* TODO translation */}
+                            </Grid.Col>
+                          )}
+
                           <Grid.Col span={2}>
                             <Button
                               radius='sm'
+                              justify='flex-end'
                               size='sm'
                               className={classes.control}
                               type='submit'
