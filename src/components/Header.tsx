@@ -25,7 +25,7 @@ export default function Header({ locale }: { locale: string }) {
     'Consulting',
     'Software',
     'Data',
-    'Artificial Intelligence',
+    'R&D',
   ];
 
   const languageOptions = [
@@ -94,11 +94,9 @@ export default function Header({ locale }: { locale: string }) {
       <Container size='lg' pos={'relative'}>
         <Group py={'0.5rem'} justify='space-between'>
           <Title className={classes.logoText} order={3}>
-            <Group gap={8}>
-              <span>
-                <span className={classes.qodi}>Qodi</span>
-              </span>
-              <span className={classes.slash}>{'/'}</span>
+            <Group gap={0}>
+              <span className={classes.qodi}>Qodi</span>
+              <span className={classes.slash}>/</span>
               <Transition
                 mounted={switched}
                 transition='fade-down'
@@ -114,7 +112,13 @@ export default function Header({ locale }: { locale: string }) {
             </Group>
           </Title>
           <Group justify='flex-end'>
-            <Text mt={'0.25rem'} size='sm' fw={500} visibleFrom='xs'>
+            <Text
+              mt={'0.4rem'}
+              size='sm'
+              fw={500}
+              visibleFrom='xs'
+              className={classes.headerText}
+            >
               Software Development | Consulting
             </Text>
             <Combobox

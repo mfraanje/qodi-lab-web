@@ -67,7 +67,7 @@ export default function HeroBackground() {
               src='./images/image.svg'
               pos='absolute'
               right={80}
-              top={172}
+              top={207}
               className={classes.image}
             />
           </div>
