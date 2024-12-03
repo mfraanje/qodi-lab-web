@@ -39,9 +39,7 @@
   /* letter-spacing: 0px; */
   font-weight: 700;
 
-  @media (max-width: $mantine-breakpoint-xs) {
-    font-size: rem(28px);
-  }
+ 
 }
 
 .headerText {
