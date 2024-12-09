@@ -95,6 +95,7 @@ export default function Header({ locale }: { locale: string }) {
         <Group py={'0.5rem'} justify='space-between'>
           <Title className={classes.logoText} order={4} mt={'0.15rem'}>
             <Group gap={0}>
+              <Image src='/images/Qodi.svg' h={20} pr={'0.5rem'}></Image>
               <span className={classes.qodi}>Qodi</span>
               <span className={classes.slash}>/</span>
               <Transition
