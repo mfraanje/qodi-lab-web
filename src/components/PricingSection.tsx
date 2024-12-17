@@ -42,33 +42,35 @@ export function PricingSection() {
             >
               <Card radius={'xl'} bg={'#ffffff00'}> */}
       <Box className={classes.page} pos={'relative'} c={'#0F66A0'} w={'100%'}>
-        <Container size={'lg'}>
+        <Container size={'md'}>
           <Paper className={classes.titleCard}>
             <Title py={'xl'} my={'1rem'} c={'white'}>
-              Wat kost een web app?
+              Wat kost maatwerksoftware?
             </Title>
             {/* TODO make into component */}
           </Paper>
           <Text c={'black'}>
-            De kosten van maatwerksoftware lopen sterk uiteen en hangen af van
-            verschillende factoren, zoals de complexiteit van de applicatie, de
-            gewenste functionaliteiten en de integraties met bestaande systemen.
-            Eén ding is zeker: maatwerksoftware wordt speciaal ontwikkeld om
-            perfect aan te sluiten bij de unieke behoeften van jouw organisatie.
+            De kosten van maatwerksoftware variëren sterk en hangen af van
+            factoren zoals complexiteit, gewenste functies en integraties met
+            bestaande systemen. Wat je kunt verwachten? Maatwerksoftware is
+            speciaal ontworpen om aan te sluiten bij de unieke behoeften van
+            jouw organisatie en levert vaak direct meerwaarde op.
           </Text>
           <br /> <br />
-          <Title order={3}>Hoe bepalen we samen de kosten?</Title>
+          <Title order={3}>
+            Hoe bepalen we samen de kosten van software op maat?
+          </Title>
           <br />
           <Text c={'black'}>
-            Bij het ontwikkelen van maatwerksoftware geloven we in een nauwe
-            samenwerking met onze klanten. Vanaf het eerste gesprek nemen we de
-            tijd om jouw ideeën en doelen goed te begrijpen. Samen vertalen we
-            jouw visie naar een concreet plan en stellen we prioriteiten. In
-            veel gevallen werken we in eerste instantie toe naar een Minimal
-            Viable Product (MVP): een basisversie van de software waarin de
-            belangrijkste functies zitten. Dit zorgt ervoor dat je snel waarde
-            uit je investering haalt en direct feedback kunt verzamelen voor
-            verdere ontwikkeling.
+            Bij het ontwikkelen van software op maat werken we nauw samen met
+            jou als klant. We starten met een persoonlijk gesprek waarin we jouw
+            ideeën en doelen bespreken. Ons doel? Jouw visie helder krijgen en
+            deze vertalen naar een concreet en haalbaar plan. In veel gevallen
+            ontwikkelen we eerst een Minimal Viable Product (MVP). Een MVP is
+            een basisversie van de software waarin alleen de belangrijkste
+            functies zijn opgenomen. Hiermee kun je snel starten, waarde
+            genereren en feedback verzamelen voor verdere doorontwikkeling. Zo
+            hou je grip op het proces en op de kosten.
           </Text>
           <br />
           <br />
@@ -76,35 +78,68 @@ export function PricingSection() {
             <Image src={'/images/processing-pana.svg'} w={'40%'}></Image>
 
             <Stack w={'50%'} gap={0}>
-              <Title order={3}>Wat beïnvloedt de kosten?</Title>
+              <Title order={3}>
+                Wat beïnvloedt de kosten van maatwerksoftware?
+              </Title>
               <br />{' '}
               <Text c={'black'}>
-                De omvang van het project: Hoe meer functies en complexiteit,
-                hoe hoger de ontwikkelkosten. Technologische keuzes: Soms zijn
-                er specifieke frameworks of technologieën nodig die de prijs
-                kunnen verhogen. Doorlopend onderhoud: Na oplevering zijn
-                updates, aanpassingen en support belangrijk om de software
-                optimaal te houden. Expertise: Het werken met een ervaren team
-                kan de investering vergroten, maar bespaart tijd en levert een
-                kwalitatief beter resultaat.{' '}
+                De prijs van softwareontwikkeling is afhankelijk van:
+                <ul>
+                  <li>
+                    De omvang van het project – Meer functies en complexiteit
+                    betekent meer ontwikkeltijd.
+                  </li>
+                  <li>
+                    {' '}
+                    Technologische keuzes – Soms zijn specifieke frameworks of
+                    technologieën nodig, wat invloed heeft op de kosten.
+                  </li>{' '}
+                  <li>
+                    {' '}
+                    Onderhoud en support – Na oplevering houden wij je software
+                    up-to-date en helpen we bij eventuele aanpassingen. Houd
+                    rekening met gemiddeld minstens 10% van de initiele kosten
+                    per jaar voor onderhoud.
+                  </li>{' '}
+                  <li>
+                    Team van experts – Ervaren ontwikkelaars leveren sneller een
+                    hoogwaardig product, wat uiteindelijk vaak kosten bespaart.
+                  </li>
+                </ul>
               </Text>
             </Stack>
           </Group>
           <br />
           <br />
-          <Title order={3}>Wat kun je verwachten?</Title>
+          <Title order={3}>Wat kost maatwerksoftware gemiddeld?</Title>
           <br />
           <Text c={'black'}>
-            Kleine, eenvoudige applicaties starten vaak rond de €5.000 tot
-            €15.000. Voor middelgrote projecten ligt het budget meestal tussen
-            de €20.000 en €50.000. Bij uitgebreide, complexe systemen met
-            meerdere integraties kan de investering oplopen tot boven de
-            €50.000. Een slimme investering in de toekomst Maatwerksoftware is
-            een investering die zich dubbel en dwars kan terugverdienen. Het
-            stroomlijnt processen, verhoogt de efficiëntie en biedt jouw
-            organisatie een solide basis om te groeien. Wil je weten wat
-            maatwerksoftware voor jouw bedrijf zou kosten? Neem gerust contact
-            met ons op. Samen brengen we jouw ideeën tot leven!
+            <ol>
+              <li>
+                Kleine projecten (eenvoudige applicaties): €5.000 - €15.000
+              </li>
+              <li>
+                Middelgrote projecten (gemiddelde complexiteit): €20.000 -
+                €50.000{' '}
+              </li>
+              <li>
+                Grote projecten (complexe systemen en integraties): €50.000+
+              </li>
+            </ol>
+            Elke organisatie is anders en daarom leveren wij altijd een
+            oplossing op maat.
+          </Text>
+          <br />
+          <br />
+          <Title order={3}>Waarom investeren in maatwerksoftware?</Title>
+          <Text c={'black'}>
+            Software op maat is een slimme investering die processen
+            stroomlijnt, fouten minimaliseert en jouw organisatie helpt groeien.
+            Het geeft je flexibiliteit en schaalbaarheid die standaardsoftware
+            vaak niet kan bieden. <br /> Wil je weten wat maatwerksoftware voor
+            jouw organisatie kost? Neem contact met ons op voor een
+            vrijblijvende offerte en ontdek hoe wij jouw ideeën kunnen omzetten
+            in slimme, toekomstbestendige software.
           </Text>
         </Container>
         {/* </Card>
