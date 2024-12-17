@@ -1,13 +1,20 @@
 import { sendEmailWithTemplate } from '@/lib/email/postmark';
 
-const from = 'mail@mickeyfraanje.com';
-const homeAddress = 'info@mickeyfraanje.com';
+const from = 'aqcuisition@qodisoft.com';
+const homeAddress = 'info@qodisoft.com';
 
-export const sendInterestEmail = async (email: string, comment: string) => {
+export const sendInterestEmail = async (
+  name: string,
+  email: string,
+  phone: string,
+  comment: string
+) => {
   const templateModel = {
+    sender_name: name,
     sender_email: email,
+    sender_phone: phone,
     sender_comment: comment,
-    origin: 'Qodilab',
+    origin: 'QodiSoft Web',
   } as any;
   await sendEmailWithTemplate(
     from,

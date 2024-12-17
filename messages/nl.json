@@ -1,21 +1,33 @@
 {
     "HeroPage": {
-        "title": ["Software,","moeiteloos", "en op maat."],
-        "description": "Software oplossingen hoeven niet ontoegankelijk te zijn. Of je nu een gebruiksvriendelijke applicatie of een volledig geïntegreerd platform nodig hebt, wij zetten jouw ideeën om in krachtige, schaalbare tools die een écht verschil maken.",
+        "title": ["Software","Oplossingen", "op maat."],
+        "description": "Van idee tot eindproduct: wij helpen je om innovatieve software-oplossingen te ontwikkelen die naadloos aansluiten op jouw unieke behoeften.",
         "cta": ["Geïnteresseerd?", "Vul je e-mailadres in om een vrijblijvend en kosteloos gesprek te starten over jouw software-idee of uitdaging!"],
-        "button": "Vraag aan",
-        "thanksTitle": "Bedankt voor je interesse!",
-        "thanksDescription": "We hebben je e-mailadres ontvangen en we zullen snel contact met je opnemen om je vraag te bespreken en de mogelijkheden door te nemen."
-    },
+        "button": "Vraag een gratis consult aan",
+        "secondaryButton": "Meer info"
+          },
     "FeatureCards": {
-        "productTitle": "Productontwikkeling | E2E",
+        "productTitle": "Productontwikkeling",
         "productDevelopment": "Van idee tot eindproduct: wij helpen je om innovatieve software-oplossingen te ontwikkelen die naadloos aansluiten op jouw unieke behoeften. Ons team zorgt voor een gebruiksvriendelijke en schaalbare applicatie die jouw bedrijf vooruit helpt.",
         "dataTitle": "Data-infrastructuur",
         "dataInfra": "Betrouwbare en efficiënte data-oplossingen zijn essentieel voor jouw bedrijf. Wij ontwerpen en bouwen robuuste infrastructuren waarmee je gegevens veilig en gestructureerd kunt opslaan, verwerken en analyseren.",
+        "prototypeTitle": "Prototype ontwerpen",
+        "prototypeDevelopment": "Een visueel prototype is een goede manier om jouw applicatie ideeën en concepten te verkennen voordat je grote kosten maakt. Wij werken samen om je idee te visualiseren zodat je het potentieel van jouw software kunt testen.",
         "websitesTitle": "Websites | Platforms",
         "websitesPlatforms": "Effectieve en professionele websites zijn onmisbaar voor jouw online succes. Wij ontwerpen en ontwikkelen gebruiksvriendelijke en responsive websites die naadloos aansluiten bij jouw merk en doelstellingen."
     },
     "ClientList": {
         "description":"Organisaties waar onze developers maatwerkoplossingen hebben geïmplementeerd."
+    },
+    "ContactPage": {
+        "title": "Neem contact op en zet de eerste stap!",
+        "description": "Neem contact op om jouw idee of probleem te bespreken. Wij staan klaar om jouw vraag te bespreken en te helpen jouw idee te realiseren.",
+        "name": "Naam",
+        "email": "E-mailadres",
+        "phone": "Telefoonnummer (optioneel)",
+        "message": "Leg hier beknopt je vraag of idee voor (optioneel)",
+        "button": "Verstuur",
+        "thanksTitle": "Bedankt voor je interesse!",
+        "thanksDescription": "We hebben je e-mailadres ontvangen en we zullen snel contact met je opnemen om je vraag te bespreken en de mogelijkheden door te nemen."
     }
 }

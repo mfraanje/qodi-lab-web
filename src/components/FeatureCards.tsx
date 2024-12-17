@@ -7,7 +7,7 @@ import {
   Box,
   Transition,
 } from '@mantine/core';
-import { IconDatabase, IconCode, IconWorld } from '@tabler/icons-react';
+import {  IconCode, IconWorld, IconWriting } from '@tabler/icons-react';
 import classes from './Components.module.css';
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
@@ -26,9 +26,9 @@ export function FeatureCards() {
       description: t('productDevelopment'),
     },
     {
-      icon: IconDatabase,
-      title: t('dataTitle'),
-      description: t('dataInfra'),
+      icon: IconWriting,
+      title: t('prototypeTitle'),
+      description: t('prototypeDevelopment'),
     },
     {
       icon: IconWorld,
@@ -79,8 +79,8 @@ export function FeatureCards() {
   ));
 
   return (
-    <Box mih={300} w={'100%'} p='md' pt={0} bg={'#3F3D56'} pb={100}>
-      <Container size='lg' py='xl'>
+    <Box mih={300} w={'100%'} p='md' pt={0} bg={'#ffffff00'} pb={100}>
+      <Container size='xl' py='xl'>
         <SimpleGrid cols={{ base: 1, md: 3 }} spacing='xl' mt={0}>
           {features}
         </SimpleGrid>

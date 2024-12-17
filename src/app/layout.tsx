@@ -11,7 +11,7 @@ import { getLocale, getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 
 export const metadata: Metadata = {
-  title: 'Qodi Software - Development & Consulting',
+  title: 'QodiSoft - Development & Consulting',
   description: 'Software oplossingen op maat.',
 };
 

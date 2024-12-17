@@ -1,10 +1,10 @@
 'use client';
-import ClientListComponent from '@/components/ClientListComponent';
-import { FeatureCards } from '@/components/FeatureCards';
 import HeroBackground from '@/components/HeroBackground';
 import { HeroComponent } from '@/components/HeroComponent';
 import { Box, Card, Transition } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
+import classes from '@/components/Components.module.css';
+import { ContactSection } from '@/components/ContactSection';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -28,15 +28,15 @@ export default function Home() {
             <Box
               w={'100%'}
               p='md'
-              bg={'#3F3D56'}
+              className={classes.pagecard}
               mih={300}
               style={{
                 boxShadow: '0px -10px 10px 0px rgba(0, 0, 0, 0.2)',
               }}
             >
-              <Card radius={'xl'} bg={'#3F3D56'}>
-                <FeatureCards></FeatureCards>
-                <ClientListComponent />
+              <Card radius={'xl'} bg={'#ffffff00'}>
+                {/* <FeatureCards></FeatureCards> */}
+                <ContactSection></ContactSection>
               </Card>
             </Box>
           </div>

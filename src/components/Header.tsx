@@ -9,6 +9,7 @@ import {
   useCombobox,
   Image,
   ActionIcon,
+  Stack,
 } from '@mantine/core';
 import classes from './Components.module.css';
 import { startTransition, useEffect, useState } from 'react';
@@ -20,21 +21,21 @@ export default function Header({ locale }: { locale: string }) {
   const mainSubtitle = 'Software';
   const [subtitle, setSubtitle] = useState(mainSubtitle);
   const allSubtitles = [
-    'Tech',
     'Development',
-    'Consulting',
+    'Solutions',
+    'Web',
+    'Platforms',
     'Software',
-    'Data',
     'R&D',
   ];
 
   const languageOptions = [
-    { language: 'nl', flag: 'nl-flag.svg' },
-    { language: 'en', flag: 'en-flag.svg' },
+    { language: 'nl', flag: 'images/nl-flag.svg' },
+    { language: 'en', flag: 'images/en-flag.svg' },
   ];
   const [selectedLanguage, setSelectedLanguage] = useState({
     language: locale,
-    flag: `${locale}-flag.svg`,
+    flag: `images/${locale}-flag.svg`,
   });
   useEffect(() => {
     setSwitched(true);
@@ -91,27 +92,37 @@ export default function Header({ locale }: { locale: string }) {
 
   return (
     <div className={classes.header}>
-      <Container size='lg' pos={'relative'}>
+      <Container size='xl' pos={'relative'}>
         <Group py={'0.5rem'} justify='space-between'>
-          <Title className={classes.logoText} order={4} mt={'0.15rem'}>
-            <Group gap={0}>
-              <Image src='/images/qodisoft.svg' h={20} pr={'0.5rem'}></Image>
-              <span className={classes.qodi}>Qodi</span>
-              <span className={classes.slash}>/</span>
-              <Transition
-                mounted={switched}
-                transition='fade-down'
-                duration={400}
-                timingFunction='ease'
-              >
-                {(styles) => (
-                  <div style={styles}>
-                    <span className={classes.subtitle}>{subtitle}</span>
-                  </div>
-                )}
-              </Transition>
-            </Group>
-          </Title>
+          <Group gap={0}>
+            <Image
+              src='/images/qodisoft.svg'
+              h={30}
+              pr={'0.5rem'}
+              mt={'0.2rem'}
+            ></Image>
+            <Title className={classes.logoText} order={4} mt={'0.15rem'}>
+              <Stack gap={0}>
+                <Group gap={0}>
+                  <span className={classes.qodi}>Qodi</span>
+                  <span className={classes.slash}>/</span>
+                  <Transition
+                    mounted={switched}
+                    transition='fade-down'
+                    duration={400}
+                    timingFunction='ease'
+                  >
+                    {(styles) => (
+                      <div style={styles}>
+                        <span className={classes.subtitle}>{subtitle}</span>
+                      </div>
+                    )}
+                  </Transition>
+                </Group>
+                <span className={classes.slogan}>Oplossingen op maat</span>
+              </Stack>
+            </Title>
+          </Group>
           <Group justify='flex-end'>
             <Text
               mt={'0.3rem'}
@@ -128,7 +139,10 @@ export default function Header({ locale }: { locale: string }) {
               position='bottom'
               withArrow
               onOptionSubmit={(val) => {
-                setSelectedLanguage({ language: val, flag: `${val}-flag.svg` });
+                setSelectedLanguage({
+                  language: val,
+                  flag: `images/${val}-flag.svg`,
+                });
                 onChangeLanguage(val);
                 combobox.closeDropdown();
               }}
