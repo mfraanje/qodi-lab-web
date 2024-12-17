@@ -9,13 +9,17 @@ import {
   Button,
   Grid,
 } from '@mantine/core';
+import Link from 'next/link';
 import classes from './Components.module.css';
 import { startTransition, useState } from 'react';
 import { Locale } from '@/i18n/config';
 import { setUserLocale } from '@/services/locale.service';
 import LogoComponent from './LogoComponent';
+import { useTranslations } from 'next-intl';
 
 export default function Header({ locale }: { locale: string }) {
+  const t = useTranslations('Header');
+
   const languageOptions = [
     { language: 'nl', flag: 'images/nl-flag.svg' },
     { language: 'en', flag: 'images/en-flag.svg' },
@@ -59,15 +63,24 @@ export default function Header({ locale }: { locale: string }) {
 
           <Grid.Col span={{ base: 6, sm: 8 }}>
             <Group justify='flex-end' mt={5}>
-              {/* <Text
-                mt={'0.3rem'}
-                size='sm'
-                fw={500}
-                visibleFrom='xs'
-                className={classes.headerText}
+              <Button
+                variant='subtle'
+                size='xs'
+                component={Link}
+                href='/services'
+                c={'#79A3C6'}
               >
-                Software Development | Consulting
-              </Text> */}
+                {t('services')}
+              </Button>
+              <Button
+                variant='subtle'
+                component={Link}
+                href='/pricing'
+                size='xs'
+                c={'#79A3C6'}
+              >
+                {t('pricing')}
+              </Button>
 
               <Combobox
                 store={combobox}
@@ -96,12 +109,7 @@ export default function Header({ locale }: { locale: string }) {
                   <Combobox.Options>{options}</Combobox.Options>
                 </Combobox.Dropdown>
               </Combobox>
-              {/* <Button variant='subtle' size='xs' c={'blue.9'}>
-                Kosten
-              </Button>
-              <Button variant='subtle' size='xs' c={'blue.9'}>
-                Over ons
-              </Button> */}
+
               <Button
                 visibleFrom='sm'
                 variant='outline'

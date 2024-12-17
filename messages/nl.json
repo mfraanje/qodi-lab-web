@@ -7,6 +7,10 @@
         "buttonShort": "Gratis consult",
         "secondaryButton": "Meer info"
           },
+    "Header":{
+        "services": "Diensten",
+        "pricing": "Wat zijn de kosten?"
+    },
     "FeatureCards": {
         "productTitle": "Productontwikkeling",
         "productDevelopment": "Van idee tot eindproduct: wij helpen je om innovatieve software-oplossingen te ontwikkelen die naadloos aansluiten op jouw unieke behoeften. Ons team zorgt voor een gebruiksvriendelijke en schaalbare applicatie die jouw bedrijf vooruit helpt.",

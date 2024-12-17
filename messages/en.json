@@ -8,6 +8,10 @@
         "secondaryButton": "More info"
         
     },
+     "Header":{
+        "services": "Services",
+        "pricing": "Pricing"
+    },
         "FeatureCards": {
             "productTitle": "Product Development",
             "productDevelopment": "From idea to end product: we help you develop innovative software solutions that seamlessly meet your unique needs. Our team ensures a user-friendly and scalable application that propels your business forward.",

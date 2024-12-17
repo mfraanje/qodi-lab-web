@@ -214,9 +214,19 @@
 }
 
 .contactCard {
- background-image: radial-gradient(#badbf0 1px, #e1ebf1 0);
+    background-image: radial-gradient(#badbf0 1px, #e1ebf1 0);
     background-size: 5px 5px;
     background-position: -19px -19px;
+}
+
+.page{
+    background-image: radial-gradient(#badbf0 1px, #e1ebf1 0);
+    background-size: 10px 10px;
+    background-position: -19px -19px;
+    padding-top: 10vh;
+    padding: 2rem;
+    padding-bottom: 10rem;
+    min-height: 100vh;
 }
 
 .pagecard{
@@ -228,6 +238,12 @@
     margin: 0px !important;
 
   }
+}
+
+.pricingCard{
+  background-image: radial-gradient(#badbf0 1px, #e1ebf1 0);
+    background-size: 5px 5px;
+    background-position: -19px -19px;
 }
 
 .cardTitle {

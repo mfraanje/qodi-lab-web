@@ -1,4 +1,5 @@
 import { Image, Group, Title, Stack, Transition } from '@mantine/core';
+import Link from 'next/link';
 import classes from './Components.module.css';
 import { useEffect, useState } from 'react';
 export default function LogoComponent() {
@@ -60,34 +61,36 @@ export default function LogoComponent() {
   };
 
   return (
-    <Group gap={0} onClick={scrollToTop} className={classes.logo}>
-      <Image
-        src='/images/qodisoft-blue.svg'
-        mah={30}
-        pr={'0.5rem'}
-        mt={'0.2rem'}
-      ></Image>
-      <Title className={classes.logoText} order={4} mt={'0.15rem'}>
-        <Stack gap={0}>
-          <Group gap={0}>
-            <span className={classes.qodi}>Qodi</span>
-            <span className={classes.slash}>/</span>
-            <Transition
-              mounted={switched}
-              transition='fade-down'
-              duration={400}
-              timingFunction='ease'
-            >
-              {(styles) => (
-                <div style={styles}>
-                  <span className={classes.subtitle}>{subtitle}</span>
-                </div>
-              )}
-            </Transition>
-          </Group>
-          <span className={classes.slogan}>Oplossingen op maat</span>
-        </Stack>
-      </Title>
-    </Group>
+    <Link href={'/'}>
+      <Group gap={0} onClick={scrollToTop} className={classes.logo}>
+        <Image
+          src='/images/qodisoft-blue.svg'
+          mah={30}
+          pr={'0.5rem'}
+          mt={'0.2rem'}
+        ></Image>
+        <Title className={classes.logoText} order={4} mt={'0.15rem'}>
+          <Stack gap={0}>
+            <Group gap={0}>
+              <span className={classes.qodi}>Qodi</span>
+              <span className={classes.slash}>/</span>
+              <Transition
+                mounted={switched}
+                transition='fade-down'
+                duration={400}
+                timingFunction='ease'
+              >
+                {(styles) => (
+                  <div style={styles}>
+                    <span className={classes.subtitle}>{subtitle}</span>
+                  </div>
+                )}
+              </Transition>
+            </Group>
+            <span className={classes.slogan}>Oplossingen op maat</span>
+          </Stack>
+        </Title>
+      </Group>
+    </Link>
   );
 }
