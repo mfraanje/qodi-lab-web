@@ -51,12 +51,12 @@ export function ContactComponent() {
     <>
       <Card
         p={'xl'}
-        w={{ base: '100%', sm: '40%' }}
+        w={{ base: '100%' }}
         shadow='md'
         radius={'xl'}
         className={classes.contactCard}
       >
-        <Stack p={{ base: 0, md: 'xl', sm: 'xl' }}>
+        <Stack p={{ base: 0, lg: 'xl' }}>
           <Transition
             mounted={emailSent}
             transition='fade-left'

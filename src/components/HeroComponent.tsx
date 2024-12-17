@@ -5,6 +5,7 @@ import {
   Text,
   Transition,
   Stack,
+  Image,
   Group,
 } from '@mantine/core';
 import classes from './Components.module.css';
@@ -79,7 +80,7 @@ export function HeroComponent() {
             >
               {(styles) => (
                 <div style={styles}>
-                  <Group mt={'md'}>
+                  <Group mt={'md'} visibleFrom='sm'>
                     <Button
                       radius='lg'
                       justify='flex-end'
@@ -91,6 +92,7 @@ export function HeroComponent() {
                       {t('secondaryButton')}
                     </Button>
                     <Button
+                      visibleFrom='sm'
                       radius='lg'
                       justify='flex-end'
                       size='md'
@@ -100,11 +102,48 @@ export function HeroComponent() {
                       {t('button')}
                     </Button>
                   </Group>
+                  <Stack hiddenFrom='sm'>
+                    <Button
+                      radius='lg'
+                      variant='outline'
+                      size='md'
+                      onClick={scrollToBottom}
+                    >
+                      {t('secondaryButton')}
+                    </Button>
+                    <Button
+                      hiddenFrom='sm'
+                      radius='lg'
+                      size='md'
+                      onClick={scrollToBottom}
+                    >
+                      {t('buttonShort')}
+                    </Button>
+                  </Stack>
                 </div>
               )}
             </Transition>
           </Stack>
         </div>
+        <Transition
+          mounted={mounted}
+          transition='fade-left'
+          duration={800}
+          enterDelay={400}
+          timingFunction='ease'
+        >
+          {(styles) => (
+            <div style={styles}>
+              <Image
+                hiddenFrom='sm'
+                src='images/innovation-animate.svg'
+                maw={400}
+                py={0}
+                my={0}
+              />
+            </div>
+          )}
+        </Transition>
       </Container>
     </>
   );

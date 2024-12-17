@@ -11,9 +11,10 @@ export default function HeroBackground() {
   }, []);
 
   return (
-    <Box pos={'absolute'} right={0} top={0}>
-      <div>
-        {/* <Transition
+    <>
+      <Box pos={'absolute'} right={0} top={0}>
+        <div>
+          {/* <Transition
           mounted={mounted}
           transition='fade-left'
           duration={800}
@@ -39,41 +40,43 @@ export default function HeroBackground() {
             </div>
           )}
         </Transition> */}
-      </div>
-      <Transition
-        mounted={mounted}
-        transition='fade-left'
-        duration={800}
-        enterDelay={800}
-        timingFunction='ease'
-      >
-        {(styles) => (
-          <div style={styles}>
-            <Box pos={'absolute'} right={80} top={220}>
-              <Dots className={classes.heroDots}></Dots>
-            </Box>
-          </div>
-        )}
-      </Transition>
-      <Transition
-        mounted={mounted}
-        transition='fade-left'
-        duration={800}
-        enterDelay={400}
-        timingFunction='ease'
-      >
-        {(styles) => (
-          <div style={styles}>
-            <Image
-              src='images/innovation-animate.svg'
-              pos='absolute'
-              right={0}
-              top={50}
-              className={classes.image}
-            />
-          </div>
-        )}
-      </Transition>
-    </Box>
+        </div>
+        <Transition
+          mounted={mounted}
+          transition='fade-left'
+          duration={800}
+          enterDelay={800}
+          timingFunction='ease'
+        >
+          {(styles) => (
+            <div style={styles}>
+              <Box pos={'absolute'} right={80} top={220}>
+                <Dots className={classes.heroDots}></Dots>
+              </Box>
+            </div>
+          )}
+        </Transition>
+        <Transition
+          mounted={mounted}
+          transition='fade-left'
+          duration={800}
+          enterDelay={400}
+          timingFunction='ease'
+        >
+          {(styles) => (
+            <div style={styles}>
+              <Image
+                visibleFrom='sm'
+                src='images/innovation-animate.svg'
+                right={0}
+                pos={'absolute'}
+                top={50}
+                className={classes.image}
+              />
+            </div>
+          )}
+        </Transition>
+      </Box>
+    </>
   );
 }

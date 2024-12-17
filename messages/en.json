@@ -4,6 +4,7 @@
         "description": "Software solutions should always be within reach. From user-friendly applications to fully integrated platforms, we turn your ideas into powerful, scalable tools that drive real impact.",
         "cta": ["Interested?", "Enter your email to start a no-obligation, free consultation about your software idea or challenge!"],
         "button": "Let's Talk",
+        "buttonShort": "Let's Talk",
         "secondaryButton": "More info"
         
     },

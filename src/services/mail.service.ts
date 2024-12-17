@@ -1,6 +1,6 @@
 import { sendEmailWithTemplate } from '@/lib/email/postmark';
 
-const from = 'aqcuisition@qodisoft.com';
+const from = 'mail@mickeyfraanje.com';
 const homeAddress = 'info@qodisoft.com';
 
 export const sendInterestEmail = async (
