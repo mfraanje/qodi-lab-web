@@ -151,7 +151,6 @@ export function HeroComponent() {
                     // w={600}
                     py={0}
                     mt={'xl'}
-                    bg='#0e66a0'
                     my={0}
                   />
                 </div>

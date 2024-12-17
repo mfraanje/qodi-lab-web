@@ -14,7 +14,10 @@
         }
     /* overflow-x: hidden; */
     @media (max-width: $mantine-breakpoint-md) {
-    background-color: #0F66A0;
+        background-color: #0F66A0;
+        background-image: radial-gradient(#4b9ed5 1px, #0F66A0 0);
+        background-size: 80px 80px;
+        background-position: -19px -19px;
   }
 }
 

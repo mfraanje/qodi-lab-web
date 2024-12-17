@@ -62,8 +62,16 @@ export default function LogoComponent() {
   return (
     <Group gap={0} onClick={scrollToTop} className={classes.logo}>
       <Image
+        visibleFrom='sm'
         src='/images/qodisoft.svg'
-        h={30}
+        mah={30}
+        pr={'0.5rem'}
+        mt={'0.2rem'}
+      ></Image>
+      <Image
+        hiddenFrom='sm'
+        src='/images/qodisoft-white.svg'
+        mah={30}
         pr={'0.5rem'}
         mt={'0.2rem'}
       ></Image>

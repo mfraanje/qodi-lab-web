@@ -102,7 +102,21 @@ export default function Header({ locale }: { locale: string }) {
               <Button variant='subtle' size='xs' c={'blue.9'}>
                 Over ons
               </Button> */}
-              <Button variant='outline' size='xs' onClick={scrollToBottom}>
+              <Button
+                visibleFrom='sm'
+                variant='outline'
+                size='xs'
+                onClick={scrollToBottom}
+              >
+                Contact
+              </Button>
+              <Button
+                hiddenFrom='sm'
+                variant='outline'
+                color={'#D2E0EC'}
+                size='xs'
+                onClick={scrollToBottom}
+              >
                 Contact
               </Button>
             </Group>
