@@ -57,13 +57,6 @@ export default function ClientListComponent() {
       <div className={embla.embla}>
         <div className={embla.embla__viewport} ref={emblaRef}>
           <div className={embla.embla__container}>
-            {/* <Group
-                  m={'lg'}
-                  justify={'center'}
-                  gap={20}
-                  c={'white'}
-                  w={'100%'}
-                > */}
             {clientList.map((client) => (
               <div className={embla.embla__slide} key={client.name}>
                 <div className={embla.embla__slide__number}>
@@ -76,7 +69,6 @@ export default function ClientListComponent() {
                 </div>
               </div>
             ))}
-            {/* </Group> */}
           </div>
         </div>
       </div>

@@ -1,10 +1,11 @@
 'use client';
 import HeroBackground from '@/components/HeroBackground';
 import { HeroComponent } from '@/components/HeroComponent';
-import { Box, Card, Transition } from '@mantine/core';
+import { Box, Card, Stack, Transition } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import classes from '@/components/Components.module.css';
 import { ContactSection } from '@/components/ContactSection';
+import ClientListComponent from '@/components/ClientListComponent';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -35,8 +36,10 @@ export default function Home() {
               }}
             >
               <Card radius={'xl'} bg={'#ffffff00'}>
-                {/* <FeatureCards></FeatureCards> */}
-                <ContactSection></ContactSection>
+                <Stack gap={'xl'}>
+                  <ClientListComponent></ClientListComponent>
+                  <ContactSection></ContactSection>
+                </Stack>
               </Card>
             </Box>
           </div>
