@@ -22,7 +22,7 @@ export default function HeroBackground() {
         >
           {(styles) => (
             <div style={styles}>
-              <Box pos={'absolute'} right={80} top={220}>
+              <Box pos={'absolute'} right={60} top={220}>
                 <Dots className={classes.heroDots}></Dots>
               </Box>
             </div>
@@ -42,7 +42,7 @@ export default function HeroBackground() {
                 src='images/innovation-animate.svg'
                 right={0}
                 pos={'absolute'}
-                top={50}
+                top={110}
                 className={classes.heroImage}
               />
             </div>

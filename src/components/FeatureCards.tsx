@@ -7,7 +7,7 @@ import {
   Box,
   Transition,
 } from '@mantine/core';
-import {  IconCode, IconWorld, IconWriting } from '@tabler/icons-react';
+import { IconCode, IconWorld, IconWriting } from '@tabler/icons-react';
 import classes from './Components.module.css';
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';

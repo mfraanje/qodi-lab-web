@@ -63,7 +63,7 @@ export function HeroComponent() {
                 {(styles) => (
                   <div style={styles}>
                     <div className={classes.content}>
-                      <Text my='xl' size='sm' className={classes.heroText}>
+                      <Text my='xl' className={classes.heroText}>
                         {t('description')} <br />
                         <br />
                         <strong className={classes.highlight}>
@@ -84,21 +84,9 @@ export function HeroComponent() {
             >
               {(styles) => (
                 <div style={styles}>
-                  <Group mt={'md'} visibleFrom='sm'>
+                  <Group mt={'md'} visibleFrom='xs'>
                     <Button
                       radius='lg'
-                      visibleFrom='md'
-                      justify='flex-end'
-                      variant='outline'
-                      size='md'
-                      className={classes.control}
-                      onClick={scrollToBottom}
-                    >
-                      {t('secondaryButton')}
-                    </Button>
-                    <Button
-                      radius='lg'
-                      hiddenFrom='md'
                       justify='flex-end'
                       color='#D2E0EC'
                       variant='outline'
@@ -109,7 +97,6 @@ export function HeroComponent() {
                       {t('secondaryButton')}
                     </Button>
                     <Button
-                      visibleFrom='sm'
                       radius='lg'
                       justify='flex-end'
                       size='md'
@@ -119,17 +106,17 @@ export function HeroComponent() {
                       {t('button')}
                     </Button>
                   </Group>
-                  <Stack hiddenFrom='sm'>
+                  <Stack hiddenFrom='xs'>
                     <Button
                       radius='lg'
                       variant='outline'
                       color='#D2E0EC'
-                      size='md'
+                      size='sm'
                       onClick={scrollToBottom}
                     >
                       {t('secondaryButton')}
                     </Button>
-                    <Button radius='lg' size='md' onClick={scrollToBottom}>
+                    <Button radius='lg' size='sm' onClick={scrollToBottom}>
                       {t('buttonShort')}
                     </Button>
                   </Stack>

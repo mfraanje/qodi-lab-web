@@ -7,9 +7,13 @@
     font-weight: 100;
     min-height: 100vh;
     @media (min-width: $mantine-breakpoint-md) {
-        background: white;
+        /* background: white;
         background-image: radial-gradient(#badbf0 1px, #e1ebf1 0);
         background-size: 5px 5px;
+        background-position: -19px -19px; */
+         background-color: #0F66A0;
+        background-image: radial-gradient(#4b9ed5 1px, #0F66A0 0);
+        background-size: 80px 80px;
         background-position: -19px -19px;
         }
     /* overflow-x: hidden; */
