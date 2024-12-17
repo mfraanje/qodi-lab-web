@@ -23,10 +23,12 @@ export default function Header({ locale }: { locale: string }) {
   const allSubtitles = [
     'Development',
     'Solutions',
+    'Consulting',
     'Web',
     'Platforms',
     'Software',
     'R&D',
+    'Data',
   ];
 
   const languageOptions = [
