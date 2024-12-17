@@ -42,7 +42,7 @@ export default function HeroBackground() {
                 src='images/innovation-animate.svg'
                 right={0}
                 pos={'absolute'}
-                top={110}
+                top={70}
                 className={classes.heroImage}
               />
             </div>
