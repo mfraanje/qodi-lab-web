@@ -136,6 +136,9 @@
 .hero{
   padding-top: 15vh;
   min-height: 30vh;
+   @media (max-width: $mantine-breakpoint-xs) {
+    padding-top: 10vh;
+  }
 }
 
 .backgroundBlob {
@@ -155,6 +158,9 @@
 .highlight {
   /* color: light-dark(var(--mantine-color-lime-6), var(--mantine-color-lime-4)); */
     color: #0e66a0;
+    @media (max-width: $mantine-breakpoint-sm) {
+      color: #D2E0EC;
+  }
 }
 
 .slogan{

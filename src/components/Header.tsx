@@ -2,7 +2,6 @@
 import {
   Container,
   Group,
-  Text,
   Combobox,
   useCombobox,
   Image,
@@ -54,11 +53,11 @@ export default function Header({ locale }: { locale: string }) {
     <div className={classes.header}>
       <Container size='xl' pos={'relative'}>
         <Grid py={'0.5rem'}>
-          <Grid.Col span={{ base: 12, sm: 4 }}>
+          <Grid.Col span={{ base: 6, sm: 4 }}>
             <LogoComponent></LogoComponent>
           </Grid.Col>
 
-          <Grid.Col span={{ base: 12, sm: 8 }}>
+          <Grid.Col span={{ base: 6, sm: 8 }}>
             <Group justify='flex-end' mt={5}>
               {/* <Text
                 mt={'0.3rem'}

@@ -7,6 +7,7 @@ import {
   Stack,
   Image,
   Group,
+  Box,
 } from '@mantine/core';
 import classes from './Components.module.css';
 import { useEffect, useState } from 'react';
@@ -51,27 +52,30 @@ export function HeroComponent() {
                 </div>
               )}
             </Transition>
-            <Transition
-              mounted={mounted}
-              transition='fade-up'
-              duration={800}
-              timingFunction='ease'
-            >
-              {(styles) => (
-                <div style={styles}>
-                  <div className={classes.content}>
-                    <Text c='#000000' my='xl' size='sm'>
-                      {t('description')} <br />
-                      <br />
-                      <strong className={classes.highlight}>
-                        {t('cta.0')}{' '}
-                      </strong>
-                      {t('cta.1')}
-                    </Text>
+
+            <Box>
+              <Transition
+                mounted={mounted}
+                transition='fade-up'
+                duration={800}
+                timingFunction='ease'
+              >
+                {(styles) => (
+                  <div style={styles}>
+                    <div className={classes.content}>
+                      <Text c='#000000' my='xl' size='sm'>
+                        {t('description')} <br />
+                        <br />
+                        <strong className={classes.highlight}>
+                          {t('cta.0')}{' '}
+                        </strong>
+                        {t('cta.1')}
+                      </Text>
+                    </div>
                   </div>
-                </div>
-              )}
-            </Transition>
+                )}
+              </Transition>
+            </Box>
             <Transition
               mounted={mounted}
               transition='fade-up'
@@ -106,6 +110,7 @@ export function HeroComponent() {
                     <Button
                       radius='lg'
                       variant='outline'
+                      color='#D2E0EC'
                       size='md'
                       onClick={scrollToBottom}
                     >
@@ -123,28 +128,29 @@ export function HeroComponent() {
                 </div>
               )}
             </Transition>
+            <Transition
+              mounted={mounted}
+              transition='fade-left'
+              duration={800}
+              enterDelay={400}
+              timingFunction='ease'
+            >
+              {(styles) => (
+                <div style={styles}>
+                  <Image
+                    hiddenFrom='sm'
+                    src='images/innovation-animate.svg'
+                    // w={600}
+                    py={0}
+                    mt={'xl'}
+                    bg='#0e66a0'
+                    my={0}
+                  />
+                </div>
+              )}
+            </Transition>
           </Stack>
         </div>
-        <Transition
-          mounted={mounted}
-          transition='fade-left'
-          duration={800}
-          enterDelay={400}
-          timingFunction='ease'
-        >
-          {(styles) => (
-            <div style={styles}>
-              <Image
-                hiddenFrom='sm'
-                src='images/innovation-animate.svg'
-                maw={400}
-                py={0}
-                mt={'xl'}
-                my={0}
-              />
-            </div>
-          )}
-        </Transition>
       </Container>
     </>
   );
