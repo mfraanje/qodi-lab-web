@@ -70,8 +70,12 @@
 
 .header {
    /* background-color: #fbf6df; */
-   background-color: #ffffff80;
+   background-image: radial-gradient(#badbf0 1px, #e1ebf1 0);
+    background-size: 5px 5px;
+    background-position: -19px -19px;
+   /* background: linear-gradient(#ffffff 60%,#ffffff00 ); */
    position: absolute;
+   padding-bottom: 2px;
    width: 100vw;
    top: 0;
 }

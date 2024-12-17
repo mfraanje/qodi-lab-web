@@ -139,6 +139,7 @@ export function HeroComponent() {
                 src='images/innovation-animate.svg'
                 maw={400}
                 py={0}
+                mt={'xl'}
                 my={0}
               />
             </div>
