@@ -6,8 +6,14 @@ import {
   Card,
   Box,
   Transition,
+  Group,
 } from '@mantine/core';
-import {  IconCode, IconWorld, IconWriting } from '@tabler/icons-react';
+import {
+  IconBulb,
+  IconCode,
+  IconWorld,
+  IconWriting,
+} from '@tabler/icons-react';
 import classes from './Components.module.css';
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
@@ -21,19 +27,19 @@ export function FeatureCards() {
 
   const mockdata = [
     {
-      icon: IconCode,
-      title: t('productTitle'),
-      description: t('productDevelopment'),
+      icon: IconBulb,
+      title: t('designTitle'),
+      description: t('designDescription'),
     },
     {
-      icon: IconWriting,
-      title: t('prototypeTitle'),
-      description: t('prototypeDevelopment'),
+      icon: IconCode,
+      title: t('developTitle'),
+      description: t('developDescription'),
     },
     {
       icon: IconWorld,
-      title: t('websitesTitle'),
-      description: t('websitesPlatforms'),
+      title: t('supportTitle'),
+      description: t('supportDescription'),
     },
   ];
 
@@ -55,21 +61,17 @@ export function FeatureCards() {
             padding='xl'
             mih={400}
           >
-            <feature.icon
-              style={{ width: rem(50), height: rem(50) }}
-              stroke={2}
-              color={'#525067'}
-            />
-            <Text
-              fz='lg'
-              fw={500}
-              className={classes.cardTitle}
-              mt='md'
-              c={'white'}
-            >
-              {feature.title}
-            </Text>
-            <Text fz='sm' c='dimmed' mt='sm'>
+            <Group>
+              <feature.icon
+                style={{ width: rem(50), height: rem(50) }}
+                stroke={2}
+                color={'#525067'}
+              />
+              <Text fz='lg' fw={500} className={classes.cardTitle} mt='md'>
+                {feature.title}
+              </Text>
+            </Group>
+            <Text fz='sm' mt='sm'>
               {feature.description}
             </Text>
           </Card>

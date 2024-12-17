@@ -15,7 +15,13 @@
         "prototypeTitle": "Prototype ontwerpen",
         "prototypeDevelopment": "Een visueel prototype is een goede manier om jouw applicatie ideeën en concepten te verkennen voordat je grote kosten maakt. Wij werken samen om je idee te visualiseren zodat je het potentieel van jouw software kunt testen.",
         "websitesTitle": "Websites | Platforms",
-        "websitesPlatforms": "Effectieve en professionele websites zijn onmisbaar voor jouw online succes. Wij ontwerpen en ontwikkelen gebruiksvriendelijke en responsive websites die naadloos aansluiten bij jouw merk en doelstellingen."
+        "websitesPlatforms": "Effectieve en professionele websites zijn onmisbaar voor jouw online succes. Wij ontwerpen en ontwikkelen gebruiksvriendelijke en responsive websites die naadloos aansluiten bij jouw merk en doelstellingen.",
+        "designTitle": "Bedenken",
+        "designDescription": "Ontwerpen is een belangrijk onderdeel van onze werkzaamheden. Wij bieden een brede keuze aan designoplossingen die jouw idee naar voren brengen en jouw visie naar voren brengen.",
+        "developTitle": "Ontwikkeling",
+        "developDescription": "Ontwikkeling is een belangrijk onderdeel van onze werkzaamheden. Wij ontwikkelen software-oplossingen die jouw bedrijf vooruit helpt.",
+        "supportTitle": "Ondersteuning",
+        "supportDescription": "Ondersteuning is een belangrijk onderdeel van onze werkzaamheden. Wij bieden ondersteuning aan software-oplossingen die jouw bedrijf vooruit helpt."
     },
     "ClientList": {
         "description":"Organisaties waar onze developers maatwerkoplossingen hebben geïmplementeerd."

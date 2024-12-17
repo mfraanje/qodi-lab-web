@@ -189,7 +189,9 @@
 
 .card {
   border: rem(1px) solid #525067;
-  background-color: #012e4a;
+  background-image: radial-gradient(#badbf0 1px, #e1ebf1 0);
+    background-size: 5px 5px;
+    background-position: -19px -19px;
   @media (max-width: $mantine-breakpoint-sm) {
     margin: 0;
   }
