@@ -224,9 +224,19 @@
     background-size: 10px 10px;
     background-position: -19px -19px;
     padding-top: 10vh;
-    padding: 2rem;
+    padding: 4rem;
     padding-bottom: 10rem;
     min-height: 100vh;
+}
+
+.titleCard{
+  background-image: linear-gradient(to right, #0F66A090 , #012e4a90 ), url('~/public/images/laptops.jpg');
+  background-size: cover; /* or "contain" depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 1rem;
 }
 
 .pagecard{
