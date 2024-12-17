@@ -41,7 +41,7 @@ export function HeroComponent() {
             >
               {(styles) => (
                 <div style={styles}>
-                  <Title className={classes.title}>
+                  <Title className={classes.heroTitle}>
                     {t('title.0')}
                     <br />
                     <span className={classes.highlight}>
@@ -63,7 +63,7 @@ export function HeroComponent() {
                 {(styles) => (
                   <div style={styles}>
                     <div className={classes.content}>
-                      <Text c='#000000' my='xl' size='sm'>
+                      <Text my='xl' size='sm' className={classes.heroText}>
                         {t('description')} <br />
                         <br />
                         <strong className={classes.highlight}>
@@ -87,7 +87,20 @@ export function HeroComponent() {
                   <Group mt={'md'} visibleFrom='sm'>
                     <Button
                       radius='lg'
+                      visibleFrom='md'
                       justify='flex-end'
+                      variant='outline'
+                      size='md'
+                      className={classes.control}
+                      onClick={scrollToBottom}
+                    >
+                      {t('secondaryButton')}
+                    </Button>
+                    <Button
+                      radius='lg'
+                      hiddenFrom='md'
+                      justify='flex-end'
+                      color='#D2E0EC'
                       variant='outline'
                       size='md'
                       className={classes.control}
@@ -116,12 +129,7 @@ export function HeroComponent() {
                     >
                       {t('secondaryButton')}
                     </Button>
-                    <Button
-                      hiddenFrom='sm'
-                      radius='lg'
-                      size='md'
-                      onClick={scrollToBottom}
-                    >
+                    <Button radius='lg' size='md' onClick={scrollToBottom}>
                       {t('buttonShort')}
                     </Button>
                   </Stack>

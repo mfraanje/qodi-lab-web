@@ -16,6 +16,7 @@
   @media (max-width: $mantine-breakpoint-sm) {
     max-width: rem(200px);
     font-size: 5px;
+    color: #79A3C6;
   }
   @media (max-width: $mantine-breakpoint-md) {
     max-width: 50%;
@@ -23,11 +24,18 @@
   @media (max-width: $mantine-breakpoint-xs) {
     max-width: 100%;
     margin-right: 0;
+    color: #79A3C6;
   }
   
 }
 
-.title {
+.heroText{
+  @media (max-width: $mantine-breakpoint-md) {
+    color: #D2E0EC;
+  }
+}
+
+.heroTitle {
   color: #000000;
   font-family:
     Greycliff CF,
@@ -40,9 +48,11 @@
  
   @media (max-width: $mantine-breakpoint-md) {
     font-size: rem(50px);
+    color: #D2E0EC;
   }
-   @media (max-width: $mantine-breakpoint-xs) {
+   @media (max-width: $mantine-breakpoint-sm) {
     font-size: rem(32px);
+    color: #D2E0EC;
   }
 }
 
@@ -54,8 +64,9 @@
   line-height: 1.2;
   /* letter-spacing: 1px; */
   font-weight: 700;
-
- 
+@media (max-width: $mantine-breakpoint-sm) {
+    font-size: rem(12px);
+  }
 }
 
 .headerText {
@@ -104,21 +115,21 @@
   }
 }
 
-.image {
+.heroImage {
   width: rem(700px);
   object-fit: contain;
   z-index: 1;
   @media (max-width: $mantine-breakpoint-lg) {
-     width: rem(500px);
-     margin-top: 80px;
+     width: rem(400px);
+     margin-top: 250px;
   }
   @media (max-width: $mantine-breakpoint-md) {
-    width: rem(400px);
-     margin-top: 100px;
+    width: rem(350px);
+     margin-top: 250px;
   }
    @media (max-width: $mantine-breakpoint-sm) {
     width: rem(300px);
-     margin-top: 250px;
+     margin-top: 180px;
   }
 }
 
@@ -158,8 +169,8 @@
 .highlight {
   /* color: light-dark(var(--mantine-color-lime-6), var(--mantine-color-lime-4)); */
     color: #0e66a0;
-    @media (max-width: $mantine-breakpoint-sm) {
-      color: #D2E0EC;
+    @media (max-width: $mantine-breakpoint-md) {
+      color: #44b4ff;
   }
 }
 
