@@ -47,6 +47,7 @@ export function PricingSection() {
             <Title py={'xl'} my={'1rem'} c={'white'}>
               Wat kost een web app?
             </Title>
+            {/* TODO make into component */}
           </Paper>
           <Text c={'black'}>
             De kosten van maatwerksoftware lopen sterk uiteen en hangen af van
