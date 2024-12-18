@@ -6,9 +6,7 @@ export function PricingSection() {
   return (
     <>
       <Box className={classes.page} pos={'relative'} w={'100%'}>
-        <Container size={'lg'} className={classes.article}>
-          <PricingComponent></PricingComponent>
-        </Container>
+        <PricingComponent></PricingComponent>
       </Box>
     </>
   );
