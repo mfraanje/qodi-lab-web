@@ -6,7 +6,7 @@ export function ServiceSection() {
   return (
     <>
       <Box className={classes.page} pos={'relative'} w={'100%'}>
-        <Container size={'lg'}>
+        <Container size={'lg'} className={classes.article}>
           <ServiceComponent></ServiceComponent>
         </Container>
       </Box>

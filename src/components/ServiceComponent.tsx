@@ -15,9 +15,8 @@ export function ServiceComponent() {
     <>
       <Box className={classes.articleContainer}>
         <BackgroundImage
-          src='images/laptops.jpg'
+          src='images/RectLight.svg'
           className={classes.titleCard}
-          bg={'#D2E0EC'}
         >
           <Center p='md'>
             <Title c='white'>Van idee naar maatwerk software</Title>
@@ -27,7 +26,7 @@ export function ServiceComponent() {
         {/* TODO make into component */}
         <Box className={classes.articleContent}>
           <span>
-            Bij het ontwikkelen van maatwerksoftware draait alles om
+            Bij het ontwikkelen van maatwerk software draait alles om
             samenwerking. Jouw idee staat centraal, en wij helpen om dit stap
             voor stap te vertalen naar een functionele, toekomstbestendige
             oplossing. Van brainstorm tot onderhoud: wij begeleiden je gedurende
@@ -128,7 +127,22 @@ export function ServiceComponent() {
           </ul>
           <span>
             Door continu te monitoren en verbeteren, zorgen we ervoor dat jouw
-            maatwerksoftware relevant blijft en met jouw organisatie meegroeit.
+            maatwerk software relevant blijft en met jouw organisatie meegroeit.
+          </span>
+          <br />
+          <br />
+          <br />
+          <Title order={3} className={classes.articleTitle}>
+            Waarom kiezen voor ons proces?
+          </Title>
+          <span>
+            Ons proces is flexibel, transparant en gericht op samenwerking. Door
+            te beginnen met een MVP en stap voor stap te werken naar een
+            compleet eindproduct, minimaliseren we risico&apos;s en
+            maximaliseren we de waarde van jouw investering. Wil jij jouw idee
+            omzetten in maatwerk software? Neem vandaag nog contact met ons op
+            ontdek hoe wij je helpen van een eerste idee tot een betrouwbare,
+            toekomstbestendige oplossing.
           </span>
         </Box>
       </Box>

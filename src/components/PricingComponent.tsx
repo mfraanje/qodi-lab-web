@@ -15,9 +15,8 @@ export function PricingComponent() {
     <>
       <Box className={classes.articleContainer}>
         <BackgroundImage
-          src='images/laptops.jpg'
+          src='images/RectLight.svg'
           className={classes.titleCard}
-          bg={'#D2E0EC'}
         >
           <Center p='md'>
             <Title c='white'>Wat kost maatwerk software?</Title>
@@ -52,7 +51,7 @@ export function PricingComponent() {
           <br />
           <Grid align='center'>
             <Grid.Col span={{ base: 12, xs: 6 }}>
-              <Image src={'images/processing-pana.svg'}></Image>
+              <Image src={'images/creative-team-animate.svg'}></Image>
             </Grid.Col>
             <Grid.Col span={{ base: 12, xs: 6 }}>
               <Stack gap={0}>

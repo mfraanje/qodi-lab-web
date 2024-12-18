@@ -235,13 +235,20 @@
     background-size: 40px 40px;
     min-height: 100vh;
     background-position: -19px -19px;
-    padding-top: 5rem;
+    padding-top: 3rem;
     /* padding: 4rem; */
     padding-bottom: 5rem;
 }
 
 .articleTitle{
   color: #0F66A0;
+}
+
+.article{
+  @media (max-width: $mantine-breakpoint-sm) {
+      padding-left: 0;
+      padding-right: 0;
+    }
 }
 
 .articleContainer{
