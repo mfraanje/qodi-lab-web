@@ -60,19 +60,6 @@
   }
 }
 
-.logoText {
-  color: #2F2E41;
-  font-family:
-     Greycliff CF,
-    var(--mantine-font-family);
-  line-height: 1.2;
-  /* letter-spacing: 1px; */
-  font-weight: 700;
-@media (max-width: $mantine-breakpoint-sm) {
-    font-size: rem(12px);
-  }
-}
-
 .headerText {
   color: #0F66A0;
   font-family:
@@ -126,6 +113,19 @@
 
 .logo{
    cursor: pointer; 
+}
+
+.logoText {
+  color: #2F2E41;
+  font-family:
+     Greycliff CF,
+    var(--mantine-font-family);
+  line-height: 1.2;
+  /* letter-spacing: 1px; */
+  font-weight: 700;
+@media (max-width: $mantine-breakpoint-sm) {
+    font-size: 1rem;
+  }
 }
 
 .control {
@@ -261,7 +261,8 @@
 .articleContent{
   padding: 3rem;
   @media (max-width: $mantine-breakpoint-sm) {
-      padding: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 }
 

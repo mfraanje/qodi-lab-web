@@ -1,5 +1,4 @@
-import { Image, Group, Title, Stack, Transition } from '@mantine/core';
-import Link from 'next/link';
+import { Image, Group, Title, Stack, Transition, Anchor } from '@mantine/core';
 import classes from './Components.module.css';
 import { useEffect, useState } from 'react';
 export default function LogoComponent() {
@@ -61,7 +60,7 @@ export default function LogoComponent() {
   };
 
   return (
-    <Link href={'/'}>
+    <Anchor href={'/'}>
       <Group gap={0} onClick={scrollToTop} className={classes.logo}>
         <Image
           src='/images/qodisoft-blue.svg'
@@ -91,6 +90,6 @@ export default function LogoComponent() {
           </Stack>
         </Title>
       </Group>
-    </Link>
+    </Anchor>
   );
 }

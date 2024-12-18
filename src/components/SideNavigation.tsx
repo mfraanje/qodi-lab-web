@@ -44,7 +44,7 @@ export function SideNavigation() {
             />
           </Drawer.Header>
           <Divider c={'#D2E0EC'}></Divider>
-          <Stack onClick={toggle} p={'xl'} gap={'xl'}>
+          <Stack onClick={toggle} p={'xl'} mx={'xl'} gap={'xl'}>
             <Button
               variant='subtle'
               size='xs'

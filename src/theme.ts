@@ -17,17 +17,17 @@ export const theme = createTheme({
     //   '#287676',
     // ],
     primary: [
-  "#ffefe9",
-  "#f8dfd8",
-  "#e9beb2",
-  "#db9b88",
-  "#cf7d65",
-  "#c86a4f",
-  "#c66042",
-  "#af5034",
-  "#9d462c",
-  "#8a3a23"
-]
+      '#ffefe9',
+      '#f8dfd8',
+      '#e9beb2',
+      '#db9b88',
+      '#cf7d65',
+      '#c86a4f',
+      '#c66042',
+      '#af5034',
+      '#9d462c',
+      '#8a3a23',
+    ],
   },
   primaryColor: 'primary',
 });
