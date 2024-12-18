@@ -1,7 +1,9 @@
-import { Image, Group, Title, Stack, Transition, Anchor } from '@mantine/core';
+import { Image, Group, Title, Stack, Transition } from '@mantine/core';
 import classes from './Components.module.css';
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 export default function LogoComponent() {
+  const router = useRouter();
   const [switched, setSwitched] = useState(false);
   const mainSubtitle = 'Software';
   const [subtitle, setSubtitle] = useState(mainSubtitle);
@@ -59,37 +61,40 @@ export default function LogoComponent() {
     });
   };
 
+  const handleHomeButton = () => {
+    router.push('/');
+    scrollToTop();
+  };
+
   return (
-    <Anchor href={'/'}>
-      <Group gap={0} onClick={scrollToTop} className={classes.logo}>
-        <Image
-          src='images/qodisoft-blue.svg'
-          mah={30}
-          pr={'0.5rem'}
-          mt={'0.2rem'}
-        ></Image>
-        <Title className={classes.logoText} order={4} mt={'0.15rem'}>
-          <Stack gap={0}>
-            <Group gap={0}>
-              <span className={classes.qodi}>Qodi</span>
-              <span className={classes.slash}>/</span>
-              <Transition
-                mounted={switched}
-                transition='fade-down'
-                duration={400}
-                timingFunction='ease'
-              >
-                {(styles) => (
-                  <div style={styles}>
-                    <span className={classes.subtitle}>{subtitle}</span>
-                  </div>
-                )}
-              </Transition>
-            </Group>
-            <span className={classes.slogan}>Oplossingen op maat</span>
-          </Stack>
-        </Title>
-      </Group>
-    </Anchor>
+    <Group gap={0} onClick={handleHomeButton} className={classes.logo}>
+      <Image
+        src='images/qodisoft-blue.svg'
+        mah={30}
+        pr={'0.5rem'}
+        mt={'0.2rem'}
+      ></Image>
+      <Title className={classes.logoText} order={4} mt={'0.15rem'}>
+        <Stack gap={0}>
+          <Group gap={0}>
+            <span className={classes.qodi}>Qodi</span>
+            <span className={classes.slash}>/</span>
+            <Transition
+              mounted={switched}
+              transition='fade-down'
+              duration={400}
+              timingFunction='ease'
+            >
+              {(styles) => (
+                <div style={styles}>
+                  <span className={classes.subtitle}>{subtitle}</span>
+                </div>
+              )}
+            </Transition>
+          </Group>
+          <span className={classes.slogan}>Oplossingen op maat</span>
+        </Stack>
+      </Title>
+    </Group>
   );
 }

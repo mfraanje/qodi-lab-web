@@ -1,4 +1,12 @@
-import { Title, Image, Stack, Box, Paper, Grid } from '@mantine/core';
+import {
+  Title,
+  Image,
+  Stack,
+  Box,
+  Grid,
+  BackgroundImage,
+  Center,
+} from '@mantine/core';
 import classes from './Components.module.css';
 import { ContactSection } from './ContactSection';
 // TODO Check if animations affect SEO
@@ -6,13 +14,17 @@ export function PricingComponent() {
   return (
     <>
       <Box className={classes.articleContainer}>
-        <Paper className={classes.titleCard} shadow='xl' mih={200}>
-          <Title py={'xl'} my={'1rem'} c={'white'}>
-            Wat kost maatwerk software?
-          </Title>
+        <BackgroundImage
+          src='images/laptops.jpg'
+          className={classes.titleCard}
+          bg={'#D2E0EC'}
+        >
+          <Center p='md'>
+            <Title c='white'>Wat kost maatwerk software?</Title>
+          </Center>
+        </BackgroundImage>
 
-          {/* TODO make into component */}
-        </Paper>
+        {/* TODO make into component */}
         <Box className={classes.articleContent}>
           <span>
             De kosten van maatwerk software variëren sterk en hangen af van

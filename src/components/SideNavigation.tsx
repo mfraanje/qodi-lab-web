@@ -54,15 +54,15 @@ export function SideNavigation() {
             >
               Home
             </Button>
-            {/* <Button
+            <Button
               variant='subtle'
               size='xs'
               component={Link}
-              href='/services'
+              href='/service'
               color={'#D2E0EC'}
             >
               {t('services')}
-            </Button> */}
+            </Button>
             <Button
               variant='subtle'
               component={Link}

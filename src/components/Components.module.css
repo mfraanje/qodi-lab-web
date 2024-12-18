@@ -267,7 +267,7 @@
 }
 
 .titleCard{
-  background-image: linear-gradient(to right, #0F66A090 , #012e4a90 ), url('~/public/images/laptops.jpg');
+  background-image: linear-gradient(to right, #0F66A090 , #012e4a90 );
   background-size: cover; /* or "contain" depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
