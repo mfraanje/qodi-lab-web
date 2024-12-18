@@ -2,7 +2,7 @@
 
 
 .body{
-    /* background-color: #fbf6df; */
+    overflow-x: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
     min-height: 100vh;
