@@ -23,7 +23,7 @@ export function PricingComponent() {
         mounted={mounted}
         transition='slide-up'
         duration={800}
-        enterDelay={0}
+        enterDelay={200}
         timingFunction='ease'
       >
         {(styles) => (
