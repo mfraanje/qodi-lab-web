@@ -4,8 +4,8 @@ import { ContactComponent } from './ContactComponent';
 export function ContactSection() {
   return (
     <Box w={'100%'} my={'xl'}>
-      <Grid align='center'>
-        <Grid.Col span={{ base: 12, sm: 6 }}>
+      <Grid align='center' gutter={0}>
+        <Grid.Col span={{ base: 12, sm: 7 }}>
           <Image src={'/images/launching-animate.svg'}></Image>
         </Grid.Col>
         <Grid.Col span={{ base: 12, sm: 5 }} offset={{ base: 0, sm: 1 }}>
