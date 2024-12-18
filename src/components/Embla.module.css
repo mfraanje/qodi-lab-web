@@ -1,5 +1,5 @@
 .embla {
-  max-width: 48rem;
+  max-width: 80vw;
   margin: auto;
   --slide-height: 6rem;
   --slide-spacing: 0.5rem;
@@ -8,7 +8,6 @@
     --slide-size: 20%;
   }
   @media screen and (max-width: 480px) {
-    max-width: 250px;
     --slide-size: 40%;
   }
 }

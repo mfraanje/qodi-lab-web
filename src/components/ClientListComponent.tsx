@@ -71,13 +71,13 @@ export default function ClientListComponent() {
             ))}
           </div>
         </div>
+        <Box w={'100%'} pos={'absolute'} top={110}>
+          <Divider color='#47445F'></Divider>
+          <Text c={'#595577'} size={rem(10)} mt={'md'} ta={'center'}>
+            {t('description')}
+          </Text>
+        </Box>
       </div>
-      <Box w={'100%'} pos={'absolute'} top={110}>
-        <Divider color='#47445F'></Divider>
-        <Text c={'#595577'} size={rem(10)} mt={'md'} ta={'center'}>
-          {t('description')}
-        </Text>
-      </Box>
     </Container>
   );
 }
