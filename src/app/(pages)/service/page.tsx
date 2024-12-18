@@ -1,5 +1,5 @@
 'use client';
-import { ServiceSection } from '@/components/ServiceSection';
+import { ServiceSection } from '@/components/ServiceComponent';
 import React from 'react';
 
 export default function Page() {

@@ -1,11 +1,10 @@
-import { Title, Image, Stack, Grid } from '@mantine/core';
+import { Title, Image, Stack, Grid, Box } from '@mantine/core';
 import classes from './Components.module.css';
-import { ContactSection } from './ContactSection';
 import { ArticleBaseComponent } from './ArticleBaseComponent';
 // TODO Check if animations affect SEO
-export function ServiceComponent() {
+export function ServiceSection() {
   return (
-    <>
+    <Box className={classes.page} pos={'relative'} w={'100%'}>
       <ArticleBaseComponent
         title='Software stappenplan: Van idee naar maatwerk oplossing'
         image='images/laptop-work.jpg'
@@ -129,6 +128,6 @@ export function ServiceComponent() {
           van een eerste idee tot een betrouwbare, toekomstbestendige oplossing.
         </span>
       </ArticleBaseComponent>
-    </>
+    </Box>
   );
 }

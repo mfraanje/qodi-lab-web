@@ -1,10 +1,10 @@
-import { Title, Image, Stack, Box, Grid } from '@mantine/core';
+import { Title, Image, Stack, Grid, Box } from '@mantine/core';
 import classes from './Components.module.css';
 import { ArticleBaseComponent } from './ArticleBaseComponent';
 // TODO Check if animations affect SEO
-export function PricingComponent() {
+export function PricingSection() {
   return (
-    <>
+    <Box className={classes.page} pos={'relative'} w={'100%'}>
       <ArticleBaseComponent
         title='Wat kost maatwerk software?'
         image='images/euro.jpg'
@@ -97,6 +97,6 @@ export function PricingComponent() {
           toekomstbestendige software.
         </span>
       </ArticleBaseComponent>
-    </>
+    </Box>
   );
 }
