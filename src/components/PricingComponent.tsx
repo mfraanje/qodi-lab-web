@@ -31,16 +31,16 @@ export function PricingComponent() {
             <Box className={classes.articleContainer}>
               <Paper className={classes.titleCard} shadow='xl'>
                 <Title py={'xl'} my={'1rem'} c={'white'}>
-                  Wat kost maatwerksoftware?
+                  Wat kost maatwerk software?
                 </Title>
                 {/* TODO make into component */}
               </Paper>
               <Box className={classes.articleContent}>
                 <Text c={'black'}>
-                  De kosten van maatwerksoftware variëren sterk en hangen af van
-                  factoren zoals complexiteit, gewenste functies en integraties
-                  met bestaande systemen. Wat je kunt verwachten?
-                  Maatwerksoftware is speciaal ontworpen om aan te sluiten bij
+                  De kosten van maatwerk software variëren sterk en hangen af
+                  van factoren zoals complexiteit, gewenste functies en
+                  integraties met bestaande systemen. Wat je kunt verwachten?
+                  Maatwerk software is speciaal ontworpen om aan te sluiten bij
                   de unieke behoeften van jouw organisatie en levert vaak direct
                   meerwaarde op.
                 </Text>
@@ -69,7 +69,7 @@ export function PricingComponent() {
                   <Grid.Col span={{ base: 12, xs: 6 }}>
                     <Stack gap={0}>
                       <Title order={3} className={classes.articleTitle}>
-                        Wat beïnvloedt de kosten van maatwerksoftware?
+                        Wat beïnvloedt de kosten van maatwerk software?
                       </Title>
                       De prijs van softwareontwikkeling is afhankelijk van:
                       <ul>
@@ -103,7 +103,7 @@ export function PricingComponent() {
                 <br />
                 <br />
                 <Title order={3} className={classes.articleTitle}>
-                  Wat kost maatwerksoftware gemiddeld?
+                  Wat kost maatwerk software gemiddeld?
                 </Title>
                 Elke organisatie is anders en daarom leveren wij altijd een
                 oplossing op maat. Echter zijn hier wat gemiddelden voor de
@@ -122,14 +122,14 @@ export function PricingComponent() {
                 </ol>
                 <br />
                 <Title order={3} className={classes.articleTitle}>
-                  Waarom investeren in maatwerksoftware?
+                  Waarom investeren in maatwerk software?
                 </Title>
                 <Text>
                   Software op maat is een slimme investering die processen
                   stroomlijnt, fouten minimaliseert en jouw organisatie helpt
                   groeien. Het geeft je flexibiliteit en schaalbaarheid die
                   standaardsoftware vaak niet kan bieden. <br /> Wil je weten
-                  wat maatwerksoftware voor jouw organisatie kost? Neem contact
+                  wat maatwerk software voor jouw organisatie kost? Neem contact
                   met ons op voor een vrijblijvende offerte en ontdek hoe wij
                   jouw ideeën kunnen omzetten in slimme, toekomstbestendige
                   software.

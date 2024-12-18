@@ -1,7 +1,7 @@
 'use client';
 import HeroBackground from '@/components/HeroBackground';
 import { HeroComponent } from '@/components/HeroComponent';
-import { Box, Card, Container, Stack, Transition } from '@mantine/core';
+import { Box, Container, Stack, Transition } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import classes from '@/components/Components.module.css';
 import { ContactSection } from '@/components/ContactSection';
