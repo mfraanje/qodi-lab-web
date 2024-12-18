@@ -1,9 +1,9 @@
-import { Container, Grid, Image } from '@mantine/core';
+import { Box, Grid, Image } from '@mantine/core';
 import { ContactComponent } from './ContactComponent';
 
 export function ContactSection() {
   return (
-    <Container size={'xl'} w={'100%'} my={'xl'}>
+    <Box w={'100%'} my={'xl'}>
       <Grid align='center'>
         <Grid.Col span={{ base: 12, sm: 6 }}>
           <Image src={'/images/launching-animate.svg'}></Image>
@@ -12,6 +12,6 @@ export function ContactSection() {
           <ContactComponent></ContactComponent>
         </Grid.Col>
       </Grid>
-    </Container>
+    </Box>
   );
 }

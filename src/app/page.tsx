@@ -1,7 +1,7 @@
 'use client';
 import HeroBackground from '@/components/HeroBackground';
 import { HeroComponent } from '@/components/HeroComponent';
-import { Box, Card, Stack, Transition } from '@mantine/core';
+import { Box, Card, Container, Stack, Transition } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import classes from '@/components/Components.module.css';
 import { ContactSection } from '@/components/ContactSection';
@@ -16,7 +16,6 @@ export default function Home() {
     <>
       <HeroBackground></HeroBackground>
       <HeroComponent />
-      {/* <Container size={'lg'}> */}
       <Transition
         mounted={mounted}
         transition='slide-up'
@@ -35,17 +34,16 @@ export default function Home() {
                 boxShadow: '0px -10px 10px 0px rgba(0, 0, 0, 0.2)',
               }}
             >
-              <Card radius={'xl'} bg={'#ffffff00'}>
+              <Container size={'xl'}>
                 <Stack gap={'xl'}>
                   <ClientListComponent></ClientListComponent>
                   <ContactSection></ContactSection>
                 </Stack>
-              </Card>
+              </Container>
             </Box>
           </div>
         )}
       </Transition>
-      {/* </Container> */}
     </>
   );
 }

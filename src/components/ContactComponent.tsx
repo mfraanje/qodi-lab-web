@@ -50,13 +50,12 @@ export function ContactComponent() {
   return (
     <>
       <Card
-        p={'xl'}
         w={{ base: '100%' }}
         shadow='md'
         radius={'xl'}
         className={classes.contactCard}
       >
-        <Stack p={{ base: 0, lg: 'xl' }}>
+        <Stack>
           <Transition
             mounted={emailSent}
             transition='fade-left'
@@ -96,10 +95,10 @@ export function ContactComponent() {
                 )}
               >
                 <Stack>
-                  <Title c='#012E4A' order={2} my={'xs'} fw={900}>
+                  <Title c='#012E4A' order={3} my={'xs'} fw={900}>
                     {t('title')}
                   </Title>
-                  <Text>{t('description')}</Text>
+                  <Text size='sm'>{t('description')}</Text>
                   <Divider></Divider>
                   <TextInput
                     leftSectionPointerEvents='none'
@@ -159,7 +158,7 @@ export function ContactComponent() {
                 <Flex justify={'center'}>
                   <Button
                     radius='xl'
-                    size='lg'
+                    size='md'
                     className={classes.control}
                     type='submit'
                   >

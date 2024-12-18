@@ -214,19 +214,51 @@
 }
 
 .contactCard {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background-image: radial-gradient(#badbf0 1px, #e1ebf1 0);
     background-size: 5px 5px;
     background-position: -19px -19px;
+    @media (max-width: $mantine-breakpoint-xs) {
+      padding: 1rem;
+    }
 }
 
 .page{
-    background-image: radial-gradient(#badbf0 1px, #e1ebf1 0);
-    background-size: 10px 10px;
-    background-position: -19px -19px;
-    padding-top: 10vh;
-    padding: 4rem;
-    padding-bottom: 10rem;
+    background-image: radial-gradient(#525067 1px, #012e4a 0);
+    background-size: 40px 40px;
     min-height: 100vh;
+    background-position: -19px -19px;
+    padding-top: 5rem;
+    /* padding: 4rem; */
+    padding-bottom: 5rem;
+}
+
+.articleTitle{
+  color: #0F66A0;
+}
+
+.articleContainer{
+  background-image: radial-gradient(#badbf0 1px, #f0f4f7 0);
+  background-size: 30px 30px;
+  background-position: -19px -19px;
+  box-shadow: '0px -15px 10px 0px rgba(200, 0, 0, 0.5)';
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  @media (max-width: $mantine-breakpoint-sm) {
+      margin: 0;
+    }
+}
+
+.articleContent{
+  padding: 3rem;
+  @media (max-width: $mantine-breakpoint-sm) {
+      padding: 1rem;
+    }
 }
 
 .titleCard{
@@ -234,9 +266,13 @@
   background-size: cover; /* or "contain" depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   padding: 2rem;
-  margin-bottom: 2rem;
+  padding-left: 3rem;
+  overflow-wrap: break-word;
+  @media (max-width: $mantine-breakpoint-sm) {
+      padding-left: 1rem;
+    }
 }
 
 .pagecard{
@@ -246,7 +282,6 @@
     @media (max-width: $mantine-breakpoint-sm) {
     padding: 0px !important;
     margin: 0px !important;
-
   }
 }
 
