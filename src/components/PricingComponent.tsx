@@ -1,40 +1,16 @@
-import {
-  Title,
-  Image,
-  Stack,
-  Box,
-  Paper,
-  Transition,
-  Grid,
-} from '@mantine/core';
-import { useEffect, useState } from 'react';
+import { Title, Image, Stack, Box, Paper, Grid } from '@mantine/core';
 import classes from './Components.module.css';
 import { ContactSection } from './ContactSection';
 // TODO Check if animations affect SEO
 export function PricingComponent() {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => {
-    setMounted(true);
-  }, []);
   return (
     <>
       <Box className={classes.articleContainer}>
         <Paper className={classes.titleCard} shadow='xl' mih={200}>
-          <Transition
-            mounted={mounted}
-            transition='slide-up'
-            duration={800}
-            enterDelay={200}
-            timingFunction='ease'
-          >
-            {(styles) => (
-              <div style={styles}>
-                <Title py={'xl'} my={'1rem'} c={'white'}>
-                  Wat kost maatwerk software?
-                </Title>
-              </div>
-            )}
-          </Transition>
+          <Title py={'xl'} my={'1rem'} c={'white'}>
+            Wat kost maatwerk software?
+          </Title>
+
           {/* TODO make into component */}
         </Paper>
         <Box className={classes.articleContent}>
@@ -64,7 +40,7 @@ export function PricingComponent() {
           <br />
           <Grid align='center'>
             <Grid.Col span={{ base: 12, xs: 6 }}>
-              <Image src={'/images/processing-pana.svg'}></Image>
+              <Image src={'images/processing-pana.svg'}></Image>
             </Grid.Col>
             <Grid.Col span={{ base: 12, xs: 6 }}>
               <Stack gap={0}>

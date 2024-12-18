@@ -63,7 +63,7 @@ export default function LogoComponent() {
     <Anchor href={'/'}>
       <Group gap={0} onClick={scrollToTop} className={classes.logo}>
         <Image
-          src='/images/qodisoft-blue.svg'
+          src='images/qodisoft-blue.svg'
           mah={30}
           pr={'0.5rem'}
           mt={'0.2rem'}

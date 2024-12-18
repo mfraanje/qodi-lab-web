@@ -64,7 +64,7 @@ export default function Header({ locale }: { locale: string }) {
 
           <Grid.Col span={{ base: 6, sm: 8 }}>
             <Group justify='flex-end' mt={5}>
-              <Button
+              {/* <Button
                 visibleFrom='sm'
                 variant='subtle'
                 size='xs'
@@ -73,7 +73,7 @@ export default function Header({ locale }: { locale: string }) {
                 c={'#79A3C6'}
               >
                 {t('services')}
-              </Button>
+              </Button> */}
               <Button
                 visibleFrom='sm'
                 variant='subtle'
