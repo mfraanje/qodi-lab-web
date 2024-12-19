@@ -31,6 +31,8 @@
 
 .heroText{
   color: #D2E0EC;
+    /* text-shadow: -2px -1px #253238; */
+
   @media (max-width: $mantine-breakpoint-md) {
     color: #D2E0EC;
     font-size: 0.9rem;
@@ -47,6 +49,8 @@
   line-height: 1.2;
   font-weight: 900;
   z-index: 1;
+  text-shadow: -4px 2px #253238;
+  
 
  
   @media (max-width: $mantine-breakpoint-md) {
@@ -54,9 +58,11 @@
     color: #ffffff;
   }
    @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #ffffff;
+    text-shadow: 0px -4px #253238;
+
   }
 }
 
@@ -128,9 +134,12 @@
   }
 }
 
-.control {
-  @media (max-width: $mantine-breakpoint-xs) {
-    flex: 1;
+.heroButton {
+  box-shadow: -3px 3px #253238;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+     box-shadow: -2px -3px #253238;
+
   }
 }
 
@@ -173,10 +182,8 @@
 .highlight {
   /* color: light-dark(var(--mantine-color-lime-6), var(--mantine-color-lime-4)); */
     /* color: #0e66a0; */
-    color: #44b4ff;
-    @media (max-width: $mantine-breakpoint-md) {
-      color: #44b4ff;
-  }
+    color: #57C4E5;
+   
 }
 
 .slogan{
@@ -210,8 +217,9 @@
 }
 
 .card {
-  border: rem(1px) solid #525067;
-  background-color: #012e4a;
+  /* border: rem(1px) solid #525067; */
+  background: #0F5180;
+ 
   @media (max-width: $mantine-breakpoint-sm) {
     margin: 0;
   }

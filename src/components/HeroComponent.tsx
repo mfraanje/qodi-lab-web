@@ -91,7 +91,7 @@ export function HeroComponent() {
                       color='#D2E0EC'
                       variant='outline'
                       size='md'
-                      className={classes.control}
+                      className={classes.heroButton}
                       onClick={scrollToBottom}
                     >
                       {t('secondaryButton')}
@@ -100,7 +100,7 @@ export function HeroComponent() {
                       radius='lg'
                       justify='flex-end'
                       size='md'
-                      className={classes.control}
+                      className={classes.heroButton}
                       onClick={scrollToBottom}
                     >
                       {t('button')}
@@ -112,11 +112,17 @@ export function HeroComponent() {
                       variant='outline'
                       color='#D2E0EC'
                       size='sm'
+                      className={classes.heroButton}
                       onClick={scrollToBottom}
                     >
                       {t('secondaryButton')}
                     </Button>
-                    <Button radius='lg' size='sm' onClick={scrollToBottom}>
+                    <Button
+                      radius='lg'
+                      size='sm'
+                      className={classes.heroButton}
+                      onClick={scrollToBottom}
+                    >
                       {t('buttonShort')}
                     </Button>
                   </Stack>

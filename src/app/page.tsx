@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react';
 import classes from '@/components/Components.module.css';
 import { ContactSection } from '@/components/ContactSection';
 import ClientListComponent from '@/components/ClientListComponent';
+import { FeatureCards } from '@/components/FeatureCards';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -36,7 +37,9 @@ export default function Home() {
             >
               <Container size={'xl'}>
                 <Stack gap={'xl'}>
+                  <FeatureCards></FeatureCards>
                   <ClientListComponent></ClientListComponent>
+
                   <ContactSection></ContactSection>
                 </Stack>
               </Container>
