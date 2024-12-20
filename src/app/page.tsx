@@ -5,7 +5,6 @@ import { Box, Container, Stack, Transition } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import classes from '@/components/Components.module.css';
 import { ContactSection } from '@/components/ContactSection';
-import ClientListComponent from '@/components/ClientListComponent';
 import { FeatureCards } from '@/components/FeatureCards';
 
 export default function Home() {
@@ -38,7 +37,8 @@ export default function Home() {
               <Container size={'xl'}>
                 <Stack gap={'xl'}>
                   <FeatureCards></FeatureCards>
-                  <ClientListComponent></ClientListComponent>
+                  {/* <ClientListComponent></ClientListComponent> */}
+                  {/* TODO decide whether I like the client list or not */}
 
                   <ContactSection></ContactSection>
                 </Stack>

@@ -8,18 +8,18 @@
         "secondaryButton": "Meer info"
           },
     "Header":{
-        "services": "Hoe gaan we te werk?",
-        "pricing": "Wat zijn de kosten?"
+        "services": "Diensten",
+        "pricing": "Kosten"
     },
     "FeatureCards": {
         "productTitle": "Productontwikkeling",
         "productDevelopment": "Van idee tot eindproduct: wij helpen je om innovatieve software-oplossingen te ontwikkelen die naadloos aansluiten op jouw unieke behoeften. Ons team zorgt voor een gebruiksvriendelijke en schaalbare applicatie die jouw bedrijf vooruit helpt.",
         "dataTitle": "Data-infrastructuur",
         "dataInfra": "Betrouwbare en efficiënte data-oplossingen zijn essentieel voor jouw bedrijf. Wij ontwerpen en bouwen robuuste infrastructuren waarmee je gegevens veilig en gestructureerd kunt opslaan, verwerken en analyseren.",
-        "prototypeTitle": "Prototype ontwerpen",
-        "prototypeDevelopment": "Een visueel prototype is een goede manier om jouw applicatie ideeën en concepten te verkennen voordat je grote kosten maakt. Wij werken samen om je idee te visualiseren zodat je het potentieel van jouw software kunt testen.",
-        "websitesTitle": "Websites | Platforms",
-        "websitesPlatforms": "Effectieve en professionele websites zijn onmisbaar voor jouw online succes. Wij ontwerpen en ontwikkelen gebruiksvriendelijke en responsive websites die naadloos aansluiten bij jouw merk en doelstellingen."
+        "prototypeTitle": "Samen het idee uitwerken",
+        "prototypeDevelopment": "Samen gaan we in gesprek om jouw idee concreet te krijgen en de technische mogelijkheden uit te werken. Zo creeëren we een stevige basis waarmee we kosten en tijd te besparen later in het proces.",
+        "maintananceTitle": "Onderhoud en doorontwikkeling",
+        "maintanance": "Na een succesvolle lancering zorgen we ervoor dat de software up-to-date blijft en we staan klaar voor doorontwikkeling van nieuwe features. Mocht je de code zelf in je bezit willen krijgen, geen probleem! Je zit bij ons nergens aan vast."
     },
     "ClientList": {
         "description":"Organisaties waar onze developers maatwerkoplossingen hebben geïmplementeerd."

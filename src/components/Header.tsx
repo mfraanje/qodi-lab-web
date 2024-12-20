@@ -56,13 +56,13 @@ export default function Header({ locale }: { locale: string }) {
 
   return (
     <div className={classes.header}>
-      <Container size='xl' pos={'relative'}>
-        <Grid py={'0.5rem'}>
-          <Grid.Col span={{ base: 6, sm: 4 }}>
+      <Container size='xl' pos={'relative'} w={'100%'}>
+        <Grid py={'0.5rem'} align='center' h={'100%'} justify='center'>
+          <Grid.Col span={{ base: 8, sm: 4 }}>
             <LogoComponent></LogoComponent>
           </Grid.Col>
 
-          <Grid.Col span={{ base: 6, sm: 8 }}>
+          <Grid.Col span={{ base: 4, sm: 8 }}>
             <Group justify='flex-end' mt={5}>
               <Button
                 visibleFrom='sm'

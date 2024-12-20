@@ -31,7 +31,7 @@
 
 .heroText{
   color: #D2E0EC;
-    /* text-shadow: -2px -1px #253238; */
+    text-shadow: -2px -1px #253238;
 
   @media (max-width: $mantine-breakpoint-md) {
     color: #D2E0EC;
@@ -81,7 +81,7 @@
 }
 
 .header {
-   background-color: #0F66A0;
+   background-color: #012e4a;
    
    /* background: linear-gradient(#ffffff 60%,#ffffff00 ); */
    position: absolute;
@@ -93,7 +93,11 @@
     /* background-size: 40px 40px;
     background-position: -19px -19px; */
   }
-   
+   @media (max-width: $mantine-breakpoint-sm) {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .qodi{
@@ -130,7 +134,7 @@
   /* letter-spacing: 1px; */
   font-weight: 700;
 @media (max-width: $mantine-breakpoint-sm) {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -174,9 +178,7 @@
 .hero{
   padding-top: 15vh;
   min-height: 30vh;
-   @media (max-width: $mantine-breakpoint-xs) {
-    padding-top: 10vh;
-  }
+  
 }
 
 .highlight {
@@ -219,8 +221,13 @@
 .card {
   /* border: rem(1px) solid #525067; */
   background: #0F5180;
- 
+   box-shadow: -3px 3px #253238;
+   min-height: 400px;
   @media (max-width: $mantine-breakpoint-sm) {
+    margin: 0;
+  }
+  @media (max-width: $mantine-breakpoint-sm) {
+    min-height: 200px;
     margin: 0;
   }
 }

@@ -8,7 +8,7 @@ import {
   Transition,
   Group,
 } from '@mantine/core';
-import { IconCode, IconWorld, IconWriting } from '@tabler/icons-react';
+import { IconBulb, IconCode, IconWriting } from '@tabler/icons-react';
 import classes from './Components.module.css';
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
@@ -22,7 +22,7 @@ export function FeatureCards() {
 
   const mockdata = [
     {
-      icon: IconWriting,
+      icon: IconBulb,
       title: t('prototypeTitle'),
       description: t('prototypeDevelopment'),
     },
@@ -32,9 +32,9 @@ export function FeatureCards() {
       description: t('productDevelopment'),
     },
     {
-      icon: IconWorld,
-      title: t('websitesTitle'),
-      description: t('websitesPlatforms'),
+      icon: IconWriting,
+      title: t('maintananceTitle'),
+      description: t('maintanance'),
     },
   ];
 
@@ -49,20 +49,19 @@ export function FeatureCards() {
     >
       {(styles) => (
         <div style={styles}>
-          <Card
-            shadow='xl'
-            radius='md'
-            className={classes.card}
-            padding='xl'
-            mih={400}
-          >
-            <Group>
+          <Card shadow='xl' radius='md' className={classes.card} padding='xl'>
+            <Group h={100}>
               <feature.icon
-                style={{ width: rem(50), height: rem(50) }}
+                style={{
+                  width: rem(50),
+                  height: rem(50),
+                  position: 'absolute',
+                }}
                 stroke={2}
                 color={'#43B4FF'}
               />
               <Text
+                ml={70}
                 fz='lg'
                 fw={500}
                 className={classes.cardTitle}
@@ -84,7 +83,7 @@ export function FeatureCards() {
   return (
     <Box mih={300} w={'100%'} p='md' pt={0} pb={100}>
       <Container size='xl' py='xl'>
-        <SimpleGrid cols={{ base: 1, md: 3 }} spacing='xl' mt={0}>
+        <SimpleGrid cols={{ base: 1, md: 2, lg: 3 }} spacing='xl' mt={0}>
           {features}
         </SimpleGrid>
       </Container>
