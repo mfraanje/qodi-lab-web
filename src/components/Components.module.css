@@ -82,7 +82,9 @@
 
 .header {
    background-color: #012e4a;
-   
+    height: 80px;
+    display: flex;
+    align-items: center;
    /* background: linear-gradient(#ffffff 60%,#ffffff00 ); */
    position: absolute;
    padding-bottom: 2px;
@@ -178,6 +180,9 @@
 .hero{
   padding-top: 15vh;
   min-height: 30vh;
+   @media (max-width: $mantine-breakpoint-xs) {
+  padding-top: 15vh;
+  }
   
 }
 
